@@ -1,0 +1,42 @@
+import Link from "next/link";
+import React from "react";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import CountConpo from "../../components/SmComponent/CountConpo";
+import Title from "../../components/Texts";
+import { Section } from "../../pages";
+
+const UnlockGrowth = () => {
+  return (
+    <div className="bg-white">
+      <Section cls="grid grid-cols-2 gap-1">
+        <div className="flex flex-col justify-between">
+          <Title>Unlock global growth</Title>
+          <p className=" text-lg">
+            Focus on the core of your business and build the best team on the
+            planet. We help you enter new markets without risk, and hire & pay
+            your team members wherever they are.
+          </p>
+          <div className=" flex items-center gap-2 text-blue-700 hover:underline">
+            <Link href="#">
+              <a className=" text-xl capitalize">see all case studies</a>
+            </Link>
+            <AiOutlineArrowRight />
+          </div>
+        </div>
+        <div className="grid items-center justify-end grid-rows-2 gap-20">
+          <div className=" flex justify-between items-center gap-20">
+            <CountConpo />
+            <CountConpo />
+          </div>
+
+          <div className=" flex justify-between items-center gap-20">
+            <CountConpo />
+            <CountConpo />
+          </div>
+        </div>
+      </Section>
+    </div>
+  );
+};
+
+export default UnlockGrowth;

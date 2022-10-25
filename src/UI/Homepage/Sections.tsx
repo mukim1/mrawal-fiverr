@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { data } from "../../data/sections";
+import Title from "../../components/Texts";
 
 const Sections = () => {
   return (
@@ -13,7 +14,7 @@ const Sections = () => {
             <Image src={v.src} alt={v.title} layout="fill" objectFit="cover" />
           </div>
           <div className="flex flex-col justify-center pl-32 text-gray-700">
-            <h2 className=" text-5xl font-bold">{v.title}</h2>
+            <Title>{v.title}</Title>
             <p className="text-xl my-5">{v.description}</p>
             <div className="flex items-center gap-1 text-xl font-semibold text-blue-600 hover:underline">
               <Link href={v.link}>Lern more </Link>

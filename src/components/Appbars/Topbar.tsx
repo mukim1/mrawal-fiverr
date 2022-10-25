@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { handleThemeChange } from "../../utils/utils";
 import { CiSettings } from "react-icons/ci";
 import Link from "next/link";
-import NavDropdown from "../NavDropdown/NavDropdown";
+import NavDropdown from "./NavDropdown/NavDropdown";
 import { TfiWorld } from "react-icons/tfi";
 
 const Topbar = () => {
