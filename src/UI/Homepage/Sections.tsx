@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { data } from "../../data/sections";
 import Title from "../../components/Texts";
+import ArrowButton from "../../components/SmComponent/ArrowButton";
 
 const Sections = () => {
   return (
@@ -15,11 +16,8 @@ const Sections = () => {
           </div>
           <div className="flex flex-col justify-center pl-32 text-gray-700">
             <Title>{v.title}</Title>
-            <p className="text-xl my-5">{v.description}</p>
-            <div className="flex items-center gap-1 text-xl font-semibold text-blue-600 hover:underline">
-              <Link href={v.link}>Lern more </Link>
-              <AiOutlineArrowRight />
-            </div>
+            <p className="my-5 text-xl">{v.description}</p>
+            <ArrowButton text="learn more" />
           </div>
         </div>
       ))}

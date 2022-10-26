@@ -54,7 +54,7 @@ const GlobalTeam = () => {
         </Card1>
         <Card1 cls="p-0">
           <Image
-            src={"/images/card1.webp"}
+            src={"/images/card2.webp"}
             layout="responsive"
             objectFit="cover"
             width={150}
@@ -63,7 +63,7 @@ const GlobalTeam = () => {
           />
           <div className="flex flex-col justify-between px-8 py-5 hover:underline">
             <Link href="#">
-              <a className="text-sm text-white bg-blue-700">payroll</a>
+              <a className="text-sm text-white bg-blue-700 ">payroll</a>
             </Link>
             <Link href="#">
               <p className="mb-2 text-2xl font-semibold">
@@ -85,7 +85,7 @@ const GlobalTeam = () => {
           placeholder="Email"
           className="w-[400px] outline-none border border-gray-300 rounded pl-5 font-semibold text-black"
         />
-        <button className="px-12 py-5 font-semibold border border-black rounded-md">
+        <button className="px-12 py-5 font-semibold border border-black rounded-md hover:bg-slate-100">
           joinNow
         </button>
       </Card1>
