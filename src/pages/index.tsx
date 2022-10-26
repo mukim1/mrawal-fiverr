@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Hero from "../UI/Homepage/Hero";
 import Layout from "../components/Layouts/Layout";
-import Sections from "../UI/Homepage/Sections";
+import Sections from "../components/Sections/Sections";
 import LogoSection from "../components/Sections/LogoSection";
 import ToolkitToUnlockGrowth from "../UI/Homepage/ToolkitToUnlockGrowth";
 import TrustedBy from "../components/Sections/TrustedBy";

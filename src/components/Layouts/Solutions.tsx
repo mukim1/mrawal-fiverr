@@ -42,11 +42,7 @@ const Solutions = ({ children, bg, title, featureImg }: Props) => {
           </Tabs.List>
         </Tabs>
 
-        <div
-          className={`min-h-screen ${
-            bg ? bg : "bg-[#162473]"
-          } text-white text-center`}
-        >
+        <div className={`text-white text-center ${bg ? bg : "bg-[#162473]"}`}>
           <div className="flex items-center justify-center pt-16 pb-10">
             <AiFillStar className=" text-[#FFB312]" />
             <p className="pl-3 text-base">4.9/5 on Capterra</p>
@@ -60,17 +56,18 @@ const Solutions = ({ children, bg, title, featureImg }: Props) => {
           <button className="text-xl bg-cyan-500 py-5 px-10 rounded-xl mt-10">
             Boo a demo
           </button>
+
+          <Section cls="translate-y-48 mb-36">
+            <Image
+              src={`/images/${featureImg}.webp`}
+              layout="responsive"
+              alt=""
+              width={100}
+              height={35}
+            />
+          </Section>
         </div>
 
-        <Section cls="-translate-y-48">
-          <Image
-            src={`/images/${featureImg}.webp`}
-            layout="responsive"
-            alt=""
-            width={100}
-            height={35}
-          />
-        </Section>
         {children}
       </div>
     </Layout>

@@ -1,9 +1,8 @@
-import Link from "next/link";
 import React from "react";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { Section } from "../../pages";
+import ArrowButton from "../SmComponent/ArrowButton";
 import CountConpo from "../SmComponent/CountConpo";
 import Title from "../Texts";
-import { Section } from "../../pages";
 
 const UnlockGrowth = () => {
   return (
@@ -16,12 +15,7 @@ const UnlockGrowth = () => {
             planet. We help you enter new markets without risk, and hire & pay
             your team members wherever they are.
           </p>
-          <div className="flex items-center gap-2 text-blue-700  hover:underline">
-            <Link href="#">
-              <a className="text-xl capitalize ">see all case studies</a>
-            </Link>
-            <AiOutlineArrowRight />
-          </div>
+          <ArrowButton text="Book demo" />
         </div>
         <div className="grid items-center justify-end grid-rows-2 gap-20">
           <div className="flex items-center justify-between gap-20 ">

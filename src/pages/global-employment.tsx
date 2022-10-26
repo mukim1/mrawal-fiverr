@@ -4,6 +4,8 @@ import Solutions from "../components/Layouts/Solutions";
 import MyotaCard from "../components/MyotaCard";
 import GlobalTeam from "../components/Sections/GlobalTeam";
 import LogoSection from "../components/Sections/LogoSection";
+import Sections from "../components/Sections/Sections";
+import { data } from "../data/solution";
 
 const GlobalEmployment = () => {
   return (
@@ -13,6 +15,7 @@ const GlobalEmployment = () => {
       featureImg="eor-hero"
     >
       <Section>
+        <Sections data={data} model={"B"} />
         <LogoSection />
         <MyotaCard />
       </Section>

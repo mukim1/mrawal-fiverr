@@ -5,6 +5,8 @@ import MyotaCard from "../components/MyotaCard";
 import LogoSection from "../components/Sections/LogoSection";
 import UnlockGrowth from "../components/Sections/UnlockGrowth";
 import GlobalTeam from "../components/Sections/GlobalTeam";
+import Sections from "../components/Sections/Sections";
+import { data2 } from "../data/solution";
 
 const ContractorManagement = () => {
   return (
@@ -14,6 +16,7 @@ const ContractorManagement = () => {
       featureImg="cm-hero"
     >
       <Section>
+        <Sections data={data2} model="B" />
         <LogoSection />
         <MyotaCard />
       </Section>
