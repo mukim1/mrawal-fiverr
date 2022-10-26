@@ -10,9 +10,11 @@ import Title from "../../components/Texts";
 const CardSection = () => {
   return (
     <div className="my-20">
-      <div className=" flex justify-between items-center mb-10">
-        <Title cls="lg:w-3/5">The complete toolkit to unlock global growth</Title>
-        <div className=" flex gap-5">
+      <div className="flex items-center justify-between mb-10 ">
+        <Title cls="lg:w-2/5">
+          The complete toolkit to unlock global growth
+        </Title>
+        <div className="flex gap-5 ">
           <AiOutlineArrowLeft />
           <AiOutlineArrowRight />
         </div>
@@ -52,7 +54,7 @@ const Helper = ({ v }: any) => {
             isHover ? "translate-y-0" : "translate-y-36"
           }`}
         >
-          <h3 className="text-xl font-semibold mb-5">{v.title}</h3>
+          <h3 className="mb-5 text-xl font-semibold">{v.title}</h3>
           <small className="">{v.description}</small>
         </div>
       </Card1>

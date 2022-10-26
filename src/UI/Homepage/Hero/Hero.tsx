@@ -5,10 +5,10 @@ const Hero = () => {
   return (
     <div className="bg-[#162473] text-white pt-9">
       <div className="relative grid grid-cols-11 py-20 ml-[6%]">
-        <div className="flex flex-col justify-center pr-32 col-span-5">
+        <div className="flex flex-col justify-center col-span-5 pr-32">
           <div className="flex items-center mb-8">
             <AiFillStar className=" text-[#FFB312]" />
-            <p className="text-base pl-3">4.9/5 on Capterra</p>
+            <p className="pl-3 text-base">4.9/5 on Capterra</p>
           </div>
           <h1 className="text-5xl font-semibold leading-none">
             One smart platform to grow global teams
@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="h-[550px] relative col-span-6 ml-5">
-          <Image src="/assets/1.webp" layout="fill" />
+          <Image src="/assets/1.webp" layout="fill" alt="" />
         </div>
       </div>
     </div>

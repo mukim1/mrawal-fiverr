@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import Topbar from "../Appbars/Topbar";
+import Footer from "../Footer/Footer";
 
 interface Props {
   children: React.ReactNode;
@@ -10,6 +11,7 @@ const Layout = ({ children }: Props) => {
     <Fragment>
       <Topbar />
       <div className="w-full min-h-screen bg-gray-100">{children}</div>
+      <Footer />
     </Fragment>
   );
 };

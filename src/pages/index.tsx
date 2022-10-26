@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       <Hero />
       <Sections />
       <Section>
-        <LogoSection />
+        <LogoSection num="2000+" text="components" />
         <ToolkitToUnlockGrowth />
         <TrustedBy />
       </Section>
