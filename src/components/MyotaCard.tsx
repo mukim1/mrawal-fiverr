@@ -1,10 +1,10 @@
 import React from "react";
-import Card1 from "../Cards/Card1";
+import Card1 from "./Cards/Card1";
 import Image from "next/image";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Link from "next/link";
-import CountConpo from "./CountConpo";
-import Flag from "./Flag";
+import CountConpo from "./SmComponent/CountConpo";
+import Flag from "./SmComponent/Flag";
 
 const MyotaCard = () => {
   return (

@@ -1,11 +1,11 @@
 import React from "react";
-import Card1 from "../../components/Cards/Card1";
+import Card1 from "../Cards/Card1";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import Title from "../../components/Texts";
-import MyotaCard from "../../components/SmComponent/MyotaCard";
-import Flag from "../../components/SmComponent/Flag";
+import Title from "../Texts";
+import MyotaCard from "../MyotaCard";
+import Flag from "../SmComponent/Flag";
 
 const TrustedBy = () => {
   return (

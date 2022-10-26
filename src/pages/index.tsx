@@ -1,20 +1,21 @@
 import type { NextPage } from "next";
-import Hero from "../UI/Homepage/Hero/Hero";
+import Hero from "../UI/Homepage/Hero";
 import Layout from "../components/Layouts/Layout";
 import Sections from "../UI/Homepage/Sections";
-import LogoSection from "../UI/Homepage/LogoSection";
+import LogoSection from "../components/Sections/LogoSection";
 import ToolkitToUnlockGrowth from "../UI/Homepage/ToolkitToUnlockGrowth";
-import TrustedBy from "../UI/Homepage/TrustedBy";
-import UnlockGrowth from "../UI/Homepage/UnlockGrowth";
-import GlobalTeam from "../UI/Homepage/GlobalTeam";
+import TrustedBy from "../components/Sections/TrustedBy";
+import UnlockGrowth from "../components/Sections/UnlockGrowth";
+import GlobalTeam from "../components/Sections/GlobalTeam";
 import WhyChooise from "../UI/Homepage/WhyChooise";
+import { data } from "../data/sections";
 
 const Home: NextPage = () => {
   return (
     <Layout>
       <Hero />
-      <Sections />
       <Section>
+        <Sections data={data} model="A" />
         <LogoSection num="2000+" text="components" />
         <ToolkitToUnlockGrowth />
         <TrustedBy />

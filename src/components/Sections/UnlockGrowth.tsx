@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import CountConpo from "../../components/SmComponent/CountConpo";
-import Title from "../../components/Texts";
+import CountConpo from "../SmComponent/CountConpo";
+import Title from "../Texts";
 import { Section } from "../../pages";
 
 const UnlockGrowth = () => {

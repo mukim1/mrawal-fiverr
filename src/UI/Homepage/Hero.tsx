@@ -1,5 +1,5 @@
 import { AiFillStar } from "react-icons/ai";
-import Button from "../../../components/SmComponent/Button";
+import Button from "../../components/SmComponent/Button";
 import Image from "next/image";
 const Hero = () => {
   return (

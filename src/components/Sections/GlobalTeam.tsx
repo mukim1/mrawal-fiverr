@@ -1,12 +1,12 @@
 import Link from "next/link";
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import Card1 from "../../components/Cards/Card1";
-import Title from "../../components/Texts";
+import Card1 from "../Cards/Card1";
+import Title from "../Texts";
 import { Section } from "../../pages";
 import Image from "next/image";
-import Button from "../../components/SmComponent/Button";
-import ArrowButton from "../../components/SmComponent/ArrowButton";
+import Button from "../SmComponent/Button";
+import ArrowButton from "../SmComponent/ArrowButton";
 
 const GlobalTeam = () => {
   return (
