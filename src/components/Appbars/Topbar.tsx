@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { handleThemeChange } from "../../utils/utils";
 import { CiSettings } from "react-icons/ci";
 import Link from "next/link";
-import NavDropdown from "./NavDropdown/NavDropdown";
 import { TfiWorld } from "react-icons/tfi";
+import { Resources, Solutions } from "./TBDropdowns";
 
 const Topbar = () => {
   const [navBg, setNavBg] = useState(false);
@@ -30,19 +30,24 @@ const Topbar = () => {
       }`}
     >
       <div className="flex items-center justify-between h-24 md:px-10">
-        <div className="flex items-center justify-between gap-x-10 ">
-          <Link href="#">
+        <div className="flex items-center justify-between gap-x-10 relative">
+          <Link href="/">
             <a
               className={`text-5xl font-bold ${navBg ? "text-green-500" : ""}`}
             >
               Lano
             </a>
           </Link>
-          {["Solutions", "Resources", "Pricing"].map((v) => (
+          {/* {["Solutions", "Resources", "Pricing"].map((v) => (
             <p key={v} className="text-xl">
               {v}
             </p>
-          ))}
+          ))} */}
+          <Solutions />
+          <Resources />
+          <Link href={"/pricing"}>
+            <a className="text-lg">Pricing</a>
+          </Link>
         </div>
 
         <div className="flex items-center justify-between gap-x-6">
