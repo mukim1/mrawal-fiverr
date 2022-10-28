@@ -2,6 +2,8 @@ import React from "react";
 import Button from "../../components/SmComponent/Button";
 import { Section } from "../../pages";
 import { IoIosRocket } from "react-icons/io";
+import { data } from "../../data/WhyChooiseCard";
+import SmCard from "../../components/SmComponent/SmCard";
 
 const WhyChooise = () => {
   return (
@@ -17,11 +19,9 @@ const WhyChooise = () => {
           </p>
           <Button />
         </div>
-        <div>
-          <div className=" w-[300px] h-[180px] border border-gray-300 rounded bg-[#1C1A51]">
-            <IoIosRocket />
-            <p>Why great businesses choose Lano?</p>
-          </div>
+
+        <div className="grid grid-cols-3 gap-y-6 translate-x-40 mt-[-40px]">
+          <SmCard />
         </div>
       </Section>
     </div>

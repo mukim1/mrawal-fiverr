@@ -23,7 +23,7 @@ const TrustedBy = () => {
 
       <div className="grid grid-cols-2 my-10 text-lg gap-x-5">
         <Card1>
-          <div className="">
+          <div className="p-5 ">
             <div className="flex justify-between mb-10">
               <Image
                 src={`/images/MyotaCardImg/1a.svg`}
@@ -61,7 +61,7 @@ const TrustedBy = () => {
           </div>
         </Card1>
         <Card1>
-          <div className="">
+          <div className="p-5">
             <div className="flex justify-between mb-10">
               <Image
                 src={`/images/MyotaCardImg/2b.svg`}

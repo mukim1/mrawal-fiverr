@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="bg-[#162473] text-white pt-9">
       <div className="relative grid grid-cols-11 py-20 ml-[6%]">
-        <div className="flex flex-col justify-center col-span-5 pr-32">
+        <div className="flex flex-col justify-center col-span-5 pr-30">
           <div className="flex items-center mb-8">
             <AiFillStar className=" text-[#FFB312]" />
             <p className="pl-3 text-base">4.9/5 on Capterra</p>
@@ -18,7 +18,7 @@ const Hero = () => {
             Automate global payments for all employee types. Consolidate payroll
             for multiple entities on a single screen.
           </p>
-          <div className="mt-8">
+          <div className="flex mt-8">
             <Button />
             <button className="py-5 lg:ml-5 rounded-lg px-[30px] font-bold text-[16px] bg-[#222F7A]">
               Available at your preferred time

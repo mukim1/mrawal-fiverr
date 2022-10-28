@@ -4,6 +4,8 @@ import Solutions from "../components/Layouts/Solutions";
 import MyotaCard from "../components/MyotaCard";
 import GlobalTeam from "../components/Sections/GlobalTeam";
 import UnlockGrowth from "../components/Sections/UnlockGrowth";
+import CardFor4Page from "../components/SmComponent/CardFor4Page";
+import WhyDoLano from "../components/WhyDoLano/WhyDoLano";
 
 const GlobalPayroll = () => {
   return (
@@ -14,10 +16,12 @@ const GlobalPayroll = () => {
     >
       <Section>
         <MyotaCard />
+        <CardFor4Page />
       </Section>
       <UnlockGrowth />
       <GlobalTeam />
       <div className="h-96"></div>
+      <WhyDoLano />
     </Solutions>
   );
 };

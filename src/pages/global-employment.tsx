@@ -6,6 +6,8 @@ import GlobalTeam from "../components/Sections/GlobalTeam";
 import LogoSection from "../components/Sections/LogoSection";
 import Sections from "../components/Sections/Sections";
 import { data } from "../data/solution";
+import WhyDoLano from "../components/WhyDoLano/WhyDoLano";
+import CardFor4Page from "../components/SmComponent/CardFor4Page";
 
 const GlobalEmployment = () => {
   return (
@@ -17,9 +19,12 @@ const GlobalEmployment = () => {
       <Section>
         <Sections data={data} model={"B"} />
         <LogoSection />
+        <CardFor4Page />
         <MyotaCard />
       </Section>
+
       <GlobalTeam />
+      <WhyDoLano />
     </Solutions>
   );
 };

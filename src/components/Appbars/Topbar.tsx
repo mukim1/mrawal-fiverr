@@ -30,10 +30,10 @@ const Topbar = () => {
       }`}
     >
       <div className="flex items-center justify-between h-24 md:px-10">
-        <div className="flex items-center justify-between gap-x-10 relative">
+        <div className="relative flex items-center justify-between gap-x-10">
           <Link href="/">
             <a
-              className={`text-5xl font-bold ${navBg ? "text-green-500" : ""}`}
+              className={`text-3xl font-bold ${navBg ? "text-green-500" : ""}`}
             >
               Lano
             </a>
@@ -46,7 +46,7 @@ const Topbar = () => {
           <Solutions />
           <Resources />
           <Link href={"/pricing"}>
-            <a className="text-lg">Pricing</a>
+            <a className="text-[16px] hover:underline">Pricing</a>
           </Link>
         </div>
 
@@ -58,7 +58,7 @@ const Topbar = () => {
           </div>
 
           <Link href="#">
-            <a className="hover:border-b-2 font-semibold text-lg">Login</a>
+            <a className="text-lg font-semibold hover:border-b-2">Login</a>
           </Link>
           <Button
             className="border-[#3f4a83] hover:bg-[#162473] hover:border-white"

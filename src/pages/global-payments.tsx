@@ -5,6 +5,8 @@ import LogoSection from "../components/Sections/LogoSection";
 import Sections from "../components/Sections/Sections";
 import TrustedBy from "../components/Sections/TrustedBy";
 import UnlockGrowth from "../components/Sections/UnlockGrowth";
+import CardFor4Page from "../components/SmComponent/CardFor4Page";
+import WhyDoLano from "../components/WhyDoLano/WhyDoLano";
 import { data3 } from "../data/solution";
 
 const GlobalPayments = () => {
@@ -16,7 +18,8 @@ const GlobalPayments = () => {
         <TrustedBy />
       </Section>
       <UnlockGrowth />
-      <div className="h-96"></div>
+      <CardFor4Page />
+      <WhyDoLano />
     </Solutions>
   );
 };

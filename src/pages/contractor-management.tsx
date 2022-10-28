@@ -7,6 +7,8 @@ import UnlockGrowth from "../components/Sections/UnlockGrowth";
 import GlobalTeam from "../components/Sections/GlobalTeam";
 import Sections from "../components/Sections/Sections";
 import { data2 } from "../data/solution";
+import WhyDoLano from "../components/WhyDoLano/WhyDoLano";
+import CardFor4Page from "../components/SmComponent/CardFor4Page";
 
 const ContractorManagement = () => {
   return (
@@ -18,11 +20,13 @@ const ContractorManagement = () => {
       <Section>
         <Sections data={data2} model="B" />
         <LogoSection />
+        <CardFor4Page />
         <MyotaCard />
       </Section>
       <UnlockGrowth />
       <GlobalTeam />
       <div className="h-96"></div>
+      <WhyDoLano />
     </Solutions>
   );
 };
