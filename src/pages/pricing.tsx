@@ -1,7 +1,9 @@
 import { TextInput } from "@mantine/core";
 import React from "react";
+import { AiOutlineCheck } from "react-icons/ai";
 import Card1 from "../components/Cards/Card1";
 import Layout from "../components/Layouts/Layout";
+import { data2 } from "../data/pricing";
 
 const Pricing = () => {
   return (
@@ -112,6 +114,36 @@ const Pricing = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="max-w-screen-lg mx-auto">
+        {data2.map((item) => (
+          <div className="grid lg:grid-cols-3 gap-5 py-10">
+            <div className="flex flex-col items-center">
+              <button className="text-lg bg-orange-400 px-4 py-1 rounded-lg">
+                FREE
+              </button>
+              <h3 className="text-3xl font-bold pt-2 pb-1">{item.title}</h3>
+              <p>{item.sub_title}</p>
+            </div>
+            <div>
+              {item.col_1.map((v) => (
+                <div className="flex gap-x-3 text-gray-600 tracking-wider">
+                  <AiOutlineCheck size={25} />
+                  <p className="mb-5">{v}</p>
+                </div>
+              ))}
+            </div>
+            <div>
+              {item.col_2.map((v) => (
+                <div className="flex gap-x-3 text-gray-600 tracking-wider">
+                  <AiOutlineCheck size={25} />
+                  <p className="mb-5">{v}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </Layout>
   );
