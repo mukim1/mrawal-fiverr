@@ -55,32 +55,62 @@ const Pricing = () => {
         </div>
       </div>
 
-      <div className="h-screen bg-blue-900 mt-40">
-        <div className="max-w-screen-lg mx-auto -translate-y-20 flex gap-x-5">
-          <Card1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              voluptates corporis ratione velit quidem blanditiis, non corrupti
-              ab explicabo tenetur quis reiciendis inventore, quasi magnam.
-              Cumque eveniet nobis deleniti quae.
-            </p>
-          </Card1>
-          <Card1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              voluptates corporis ratione velit quidem blanditiis, non corrupti
-              ab explicabo tenetur quis reiciendis inventore, quasi magnam.
-              Cumque eveniet nobis deleniti quae.
-            </p>
-          </Card1>
-          <Card1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              voluptates corporis ratione velit quidem blanditiis, non corrupti
-              ab explicabo tenetur quis reiciendis inventore, quasi magnam.
-              Cumque eveniet nobis deleniti quae.
-            </p>
-          </Card1>
+      <div className="h-screen bg-blue-900 mt-60">
+        <div className="max-w-screen-lg mx-auto -translate-y-48 -mb-40 flex gap-x-8 justify-between">
+          {data.map((item) => (
+            <div
+              key={item.id}
+              className="shadow-sm rounded-xl p-10 bg-white flex-1 border border-black hover:bg-orange-100 hover:border-orange-500"
+            >
+              <div className="text-center h-80">
+                <h3 className="text-2xl font-semibold">{item.title}</h3>
+                <p className="text-gray-500">{item.sub_title}</p>
+                <h5 className="text-5xl text-violet-500 mt-7 font-bold">$0</h5>
+                <h6 className="text-xl font-semibold mb-5">100% free</h6>
+                <p className="text-gray-500 underline">
+                  See all Accountiong feature
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="max-w-screen-lg mx-auto">
+          <div className="shadow-sm rounded p-10 bg-white grid gap-x-8 lg:grid-cols-3">
+            <div>
+              <h5>Add on</h5>
+              <h3 className="text-2xl font-bold py-3">Recruitment (ATA)</h3>
+              <p className="text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident blanditiis voluptates et, maiores rerum dolorem
+                minima!
+              </p>
+            </div>
+
+            <div className="border border-gray-200 rounded">
+              <p className="border-b border-gray-200 p-3">
+                <b className="text-lg">Basic</b> - 10 job offers
+              </p>
+              <div className="p-3">
+                <b>$49/month</b>
+                <p className="text-gray-600">
+                  billed yearly or $59 month-to-month
+                </p>
+              </div>
+            </div>
+
+            <div className="border border-gray-200 rounded">
+              <p className="border-b border-gray-200 p-3">
+                <b className="text-lg">Basic</b> - 10 job offers
+              </p>
+              <div className="p-3">
+                <b>$49/month</b>
+                <p className="text-gray-600">
+                  billed yearly or $59 month-to-month
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Layout>
@@ -88,3 +118,24 @@ const Pricing = () => {
 };
 
 export default Pricing;
+
+const data = [
+  {
+    id: 1,
+    title: "Invoicing",
+    sub_title: "Look like a pro",
+    price: "$9",
+  },
+  {
+    id: 2,
+    title: "Accounting",
+    sub_title: "Always be organized",
+    price: "$19",
+  },
+  {
+    id: 3,
+    title: "Banking",
+    sub_title: "Ditch fees, and bookkeeping",
+    price: "$29",
+  },
+];
