@@ -4,7 +4,7 @@ import { handleThemeChange } from "../../utils/utils";
 import { CiSettings } from "react-icons/ci";
 import Link from "next/link";
 import { TfiWorld } from "react-icons/tfi";
-import { Resources, Solutions } from "./TBDropdowns";
+import { PhoneNenu, Resources, Solutions } from "./TBDropdowns";
 import { AiOutlineMenu } from "react-icons/ai";
 
 const Topbar = () => {
@@ -71,7 +71,8 @@ const Topbar = () => {
         </div>
 
         <span className="cursor-pointer md:hidden">
-          <AiOutlineMenu size={22} />
+          {/* <AiOutlineMenu size={22} /> */}
+          <PhoneNenu />
         </span>
       </div>
     </div>

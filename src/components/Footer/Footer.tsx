@@ -8,11 +8,12 @@ import {
   AiFillTwitterCircle,
   AiOutlineGlobal,
 } from "react-icons/ai";
+import { Accordion } from "@mantine/core";
 
 const Footer = () => {
   return (
-    <div className="bg-black p-14">
-      <div className="grid text-white sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+    <div className="bg-black md:p-14">
+      <div className="hidden md:grid text-white sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         <div className="hidden col-span-2 md:block md:col-span-1">
           <h2 className="mb-10 text-5xl font-bold">lano</h2>
           <p className="mb-2">Imprint</p>
@@ -22,15 +23,34 @@ const Footer = () => {
         {data.map((v) => (
           <div className="" key={v.title}>
             <Link href={"/"}>
-              <a className="text-xl font-semibold">{v.title}</a>
+              <a className="text-xl font-semibold block mb-3">{v.title}</a>
             </Link>
 
             {v.item.map((v2) => (
-              <p className="py-4 text-sm " key={v2.item}>
+              <p className="py-2 text-sm " key={v2.item}>
                 {v2.item}
               </p>
             ))}
           </div>
+        ))}
+      </div>
+
+      <div className="md:hidden">
+        {data.map((v) => (
+          <Accordion key={v.title}>
+            <Accordion.Item value={v.title}>
+              <Accordion.Control className="text-white hover:bg-black">
+                {v.title}
+              </Accordion.Control>
+              <Accordion.Panel sx={{ color: "white" }}>
+                {v.item.map((v2) => (
+                  <p className="py-1 text-sm" key={v2.item}>
+                    {v2.item}
+                  </p>
+                ))}
+              </Accordion.Panel>
+            </Accordion.Item>
+          </Accordion>
         ))}
       </div>
 
