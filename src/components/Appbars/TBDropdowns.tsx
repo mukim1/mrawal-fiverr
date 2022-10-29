@@ -48,8 +48,9 @@ export const Solutions = () => {
             </div>
           </div>
         </div>
+
         <div>
-          <div className="flex items-center gap-6 ">
+          <div className="flex items-center gap-6 my-5">
             <TbFileDollar className="text-blue-400" size={30} />
             <div className="flex flex-col ">
               <Link href="/global-payroll">
@@ -76,16 +77,13 @@ export const Solutions = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center gap-6 my-5 ">
-          <p className=" text-lg text-black font-[500] w-3/5">
-            API and Integrations
-          </p>
+
+        <div className="gap-6 my-5 ">
+          <p className="py-2 text-lg text-black ">API and Integrations</p>
           <Link href="/privacypolicy">
-            <p className=" text-lg text-black font-[500] w-3/5">
-              Security and Privacy
-            </p>
+            <p className="py-2 text-lg text-black ">Security and Privacy</p>
           </Link>
-          <p className=" text-lg text-black font-[500]">Global Compliance</p>
+          <p className="py-2 text-lg text-black">Global Compliance</p>
         </div>
       </div>
     </TBDropdown>

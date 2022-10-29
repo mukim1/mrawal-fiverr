@@ -92,3 +92,46 @@ export const data2 = [
     ],
   },
 ];
+
+export const faq = [
+  {
+    id: 1,
+    q: "Is your software actually free?",
+    a: "Yes! Our invoicing, accounting, and US-only banking software is 100% free—no trials, subscriptions, or hidden fees.",
+  },
+  {
+    id: 2,
+    q: "What’s the catch—how does Wave make money?",
+    a: "Wave makes money through our optional, paid money management products. Depending on your business needs, you can choose to pay for online payment processing, payroll, and 1:1 advisors. This allows our core software—invoicing, accounting, and business banking (currently only available to sole proprietors in the US)—to always be free.",
+  },
+  {
+    id: 3,
+    q: "Do I need to enter my credit card details to sign up?",
+    a: "Put your wallet away. You won’t need to enter a credit card unless you want to use our payroll service. Just create your account and get started for free.",
+  },
+  {
+    id: 4,
+    q: "How do I get started with Wave Money free business banking?",
+    a: "Wave Money is currently available to single-owner businesses in the United States with a Wave account. Once you create an account, we’ll notify all new eligible businesses by email. You’ll be able to download the Wave mobile app directly from your email or you can learn more within your Wave account.",
+  },
+  {
+    id: 5,
+    q: "Are you a regulated bank?",
+    a: "Wave is not a bank, but we are a banking alternative. We partner with Community Federal Savings Bank (CFSB) to issue the Wave Visa® Business Debit Card. CFSB holds all Wave Money deposits, which are insured up to $250,000 through the Federal Deposit Insurance Corporation (FDIC).",
+  },
+  {
+    id: 6,
+    q: "Do I need to install any software?",
+    a: "Wave is 100% web-based, so you just need an Internet connection and browser. You can, however, download and install our mobile invoicing app for iOS and Android.",
+  },
+  {
+    id: 7,
+    q: "Is my data secure?",
+    a: "Completely. Our servers are protected physically and electronically. Any connection between you and Wave is protected by 256-bit SSL encryption. Wave is a PCI-DSS Level 1 Service Provider.",
+  },
+  {
+    id: 8,
+    q: "Do you provide customer support?",
+    a: "We provide different levels of support for customers who use different parts of Wave. Full details on how Wave support works are available here.",
+  },
+];

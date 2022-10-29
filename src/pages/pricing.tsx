@@ -1,18 +1,18 @@
-import { TextInput } from "@mantine/core";
+import { Accordion, TextInput } from "@mantine/core";
 import React from "react";
 import { AiOutlineCheck } from "react-icons/ai";
 import Card1 from "../components/Cards/Card1";
 import Layout from "../components/Layouts/Layout";
-import { data2 } from "../data/pricing";
+import { data2, faq } from "../data/pricing";
 
 const Pricing = () => {
   return (
     <Layout>
       <div className="px-5 pt-32 md:px-0">
-        <h1 className="text-3xl lg:text-5xl leading-snug text-center text-gray-700">
+        <h1 className="text-3xl leading-snug text-center text-gray-700 lg:text-5xl">
           Everything you need. <br /> Nothing you dont.
         </h1>
-        <h1 className="my-6 lg:my-10 lg:text-xl tracking-wider text-center text-gray-600">
+        <h1 className="my-6 tracking-wider text-center text-gray-600 lg:my-10 lg:text-xl">
           Our bookkeeping and banking tools can be used separately or together{" "}
           <br /> for maximum control of your business finances.
         </h1>
@@ -45,7 +45,7 @@ const Pricing = () => {
           <div className="h-[1px] bg-blue-500 flex-1"></div>
         </div>
 
-        <div className="mx-auto w-full lg:w-96">
+        <div className="w-full mx-auto lg:w-96">
           <button className="w-full px-8 py-3 text-lg font-semibold text-white bg-blue-400 rounded-full">
             Create your free account
           </button>
@@ -57,8 +57,8 @@ const Pricing = () => {
         </div>
       </div>
 
-      <div className="min-h-screen lg:bg-blue-900 mt-60 px-5">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between max-w-screen-lg mx-auto -mb-40 -translate-y-48 gap-8">
+      <div className="min-h-screen px-5 lg:bg-blue-900 mt-60">
+        <div className="grid justify-between max-w-screen-lg grid-cols-1 gap-8 mx-auto -mb-40 -translate-y-48 md:grid-cols-2 lg:grid-cols-3">
           {data.map((item) => (
             <div
               key={item.id}
@@ -116,7 +116,7 @@ const Pricing = () => {
         </div>
       </div>
 
-      <div className="max-w-screen-lg mx-auto px-5">
+      <div className="max-w-screen-lg px-5 mx-auto">
         {data2.map((item) => (
           <div key={item.id} className="grid gap-5 py-10 lg:grid-cols-3">
             <div className="flex flex-col items-center">
@@ -154,11 +154,35 @@ const Pricing = () => {
           </div>
         ))}
       </div>
+
+      <div className="py-5 bg-purple-400">
+        <FAQ />
+      </div>
     </Layout>
   );
 };
 
 export default Pricing;
+
+export const FAQ = () => (
+  <React.Fragment>
+    <h3 className="py-2 text-2xl font-semibold text-center lg:text-4xl lg:py-5">
+      Frequently Asked Questions
+    </h3>
+    <div className="max-w-screen-md mx-auto">
+      {faq.map((v) => (
+        <Accordion key={v.id}>
+          <Accordion.Item value={v.q}>
+            <Accordion.Control className="hover:bg-purple-400">
+              <h6 className="text-xl font-semibold">{v.q}</h6>
+            </Accordion.Control>
+            <Accordion.Panel>{v.a}</Accordion.Panel>
+          </Accordion.Item>
+        </Accordion>
+      ))}
+    </div>
+  </React.Fragment>
+);
 
 const data = [
   {
