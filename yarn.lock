@@ -422,10 +422,10 @@
     "@radix-ui/react-scroll-area" "1.0.0"
     "react-textarea-autosize" "8.3.4"
 
-"@mantine/hooks@5.6.1":
-  "integrity" "sha512-IkRJ2D047egMwJj4CB3NeDe1wVpukiEhg3R3mKZVNYYnKZdUGypFI4rX648Eck9aFFWJulg7JqhnF9W65n7bDA=="
-  "resolved" "https://registry.npmjs.org/@mantine/hooks/-/hooks-5.6.1.tgz"
-  "version" "5.6.1"
+"@mantine/hooks@^5.6.3", "@mantine/hooks@5.6.1":
+  "integrity" "sha512-de3Fm7Z2MrWms8Ah/YbG9fr6CLLtAfz5LCwtqnRXgOetqbu38ZERYNi7TMFxnhGdZko90QjdIpiQRJBsfVax+g=="
+  "resolved" "https://registry.npmjs.org/@mantine/hooks/-/hooks-5.6.3.tgz"
+  "version" "5.6.3"
 
 "@mantine/styles@5.6.1":
   "integrity" "sha512-IsJqMRqw0pGr0Rd959H4W6RhbdMxcP7E06f78zQZLB6GTng+vYhTog5l7BXFwrJ9zPDzz68fDt51Rd1gz7Yarw=="
