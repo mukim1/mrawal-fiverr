@@ -30,7 +30,7 @@ const Home: NextPage = () => {
 export default Home;
 
 export const Section = ({ children, cls }: Props) => (
-  <div className={`max-w-screen-xl mx-auto py-10 ${cls}`}>{children}</div>
+  <div className={`max-w-screen-xl mx-auto py-10 px-5 ${cls}`}>{children}</div>
 );
 interface Props {
   children: React.ReactNode;

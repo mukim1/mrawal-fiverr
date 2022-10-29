@@ -18,8 +18,8 @@ const GlobalTeam = () => {
         <ArrowButton text="see all case studies" />
       </div>
 
-      <div className="grid grid-cols-4 my-10 gap-x-8">
-        <Card1 cls="bg-[#1A1838] text-white col-span-2 flex flex-col items-center justify-center">
+      <div className="grid justify-between my-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8">
+        <Card1 cls="bg-[#1A1838] text-white sm:col-span-2 md:col-span-2 lg:col-span-2 flex flex-col items-center justify-center">
           <h3 className="text-[30px] font-[500] w-3/5 text-center">
             Hire top talent and run payroll anywhere
           </h3>
@@ -75,19 +75,23 @@ const GlobalTeam = () => {
         </Card1>
       </div>
 
-      <Card1 cls="flex justify-between gap-x-8 p-10">
-        <p className="text-lg font-semibold ">
+      <Card1 cls="md:flex justify-between gap-x-8 p-10">
+        <p className="flex-1 lg:text-lg">
           Get professional advice and tips on hiring remote talent and scaling
           businesses globally. Join over 50 000 subscribers now.
         </p>
-        <input
-          type="text"
-          placeholder="Email"
-          className="w-[400px] outline-none border border-gray-300 rounded pl-5 font-semibold text-black"
-        />
-        <button className="px-12 py-5 font-semibold border border-black rounded-md hover:bg-slate-100">
-          joinNow
-        </button>
+        <div>
+          <input
+            type="text"
+            placeholder="Email"
+            className="lg:w-[400px] w-full my-5 md:my-0 outline-none border border-gray-300 rounded pl-5 p-2 md:p-5 font-semibold text-black"
+          />
+        </div>
+        <div>
+          <button className="px-12 py-2 font-semibold border border-black rounded-md lg:py-5 hover:bg-slate-100">
+            joinNow
+          </button>
+        </div>
       </Card1>
     </Section>
   );

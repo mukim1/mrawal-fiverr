@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="bg-[#162473] text-white pt-9">
       <div className="relative grid grid-cols-11 py-20 ml-[6%]">
-        <div className="flex flex-col justify-center col-span-5 pr-30">
+        <div className="flex flex-col justify-center col-span-11 md:col-span-8 lg:col-span-5 pr-30">
           <div className="flex items-center mb-8">
             <AiFillStar className=" text-[#FFB312]" />
             <p className="pl-3 text-base">4.9/5 on Capterra</p>
@@ -25,7 +25,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="h-[550px] relative col-span-6 ml-5">
+        <div className="h-[550px] hidden lg:block relative col-span-6 ml-5">
           <Image src="/assets/1.webp" layout="fill" alt="" />
         </div>
       </div>

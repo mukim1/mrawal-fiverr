@@ -5,6 +5,7 @@ import { CiSettings } from "react-icons/ci";
 import Link from "next/link";
 import { TfiWorld } from "react-icons/tfi";
 import { Resources, Solutions } from "./TBDropdowns";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const Topbar = () => {
   const [navBg, setNavBg] = useState(false);
@@ -38,19 +39,17 @@ const Topbar = () => {
               Lano
             </a>
           </Link>
-          {/* {["Solutions", "Resources", "Pricing"].map((v) => (
-            <p key={v} className="text-xl">
-              {v}
-            </p>
-          ))} */}
-          <Solutions />
-          <Resources />
-          <Link href={"/pricing"}>
-            <a className="text-[16px] hover:underline">Pricing</a>
-          </Link>
+
+          <div className="items-center justify-between hidden md:flex gap-x-8">
+            <Solutions />
+            <Resources />
+            <Link href={"/pricing"}>
+              <a className="text-[16px] hover:underline">Pricing</a>
+            </Link>
+          </div>
         </div>
 
-        <div className="flex items-center justify-between gap-x-6">
+        <div className="items-center justify-between hidden md:flex gap-x-6">
           <div className="p-2 rounded hover:text-black">
             <Link href="#">
               <TfiWorld size={16} />
@@ -70,6 +69,10 @@ const Topbar = () => {
             Book a demo
           </Button>
         </div>
+
+        <span className="cursor-pointer md:hidden">
+          <AiOutlineMenu size={22} />
+        </span>
       </div>
     </div>
   );

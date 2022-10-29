@@ -8,16 +8,16 @@ import { data2 } from "../data/pricing";
 const Pricing = () => {
   return (
     <Layout>
-      <div className="pt-32">
-        <h1 className="text-5xl text-gray-700 text-center leading-snug">
+      <div className="px-5 pt-32 md:px-0">
+        <h1 className="text-5xl leading-snug text-center text-gray-700">
           Everything you need. <br /> Nothing you don't.
         </h1>
-        <h1 className="text-xl tracking-wider text-gray-600 text-center my-10">
+        <h1 className="my-10 text-xl tracking-wider text-center text-gray-600">
           Our bookkeeping and banking tools can be used separately or together{" "}
           <br /> for maximum control of your business finances.
         </h1>
 
-        <div className="flex max-w-screen-lg lg:px-14 mx-auto gap-x-5 items-end">
+        <div className="items-end max-w-screen-lg mx-auto md:flex lg:px-14 gap-x-5">
           <TextInput
             placeholder="Enter your email"
             label="Email Address"
@@ -33,24 +33,24 @@ const Pricing = () => {
             className="w-full"
           />
           <div className="w-full">
-            <button className=" bg-fuchsia-300 rounded-full py-3 px-8 text-lg font-semibold">
+            <button className="w-full px-8 py-3 mt-10 text-lg font-semibold rounded-full bg-fuchsia-300 lg:mt-0">
               Create your free account
             </button>
           </div>
         </div>
 
-        <div className="flex w-96 items-center gap-x-3 mx-auto my-4">
+        <div className="flex items-center mx-auto my-4 w-96 gap-x-3">
           <div className="h-[1px] bg-blue-500 flex-1"></div>
           <p>or</p>
           <div className="h-[1px] bg-blue-500 flex-1"></div>
         </div>
 
-        <div className="w-96 mx-auto">
-          <button className="bg-blue-400 text-white rounded-full py-3 px-8 text-lg font-semibold w-full">
+        <div className="mx-auto w-96">
+          <button className="w-full px-8 py-3 text-lg font-semibold text-white bg-blue-400 rounded-full">
             Create your free account
           </button>
         </div>
-        <div className="text-center text-lg my-5">
+        <div className="my-5 text-lg text-center">
           By signing up, you are indicating that you have read and agree to the
           <span className="font-semibold"> Terms of Use</span> and
           <span className="font-semibold"> Privacy Policy.</span>
@@ -58,17 +58,17 @@ const Pricing = () => {
       </div>
 
       <div className="h-screen bg-blue-900 mt-60">
-        <div className="max-w-screen-lg mx-auto -translate-y-48 -mb-40 flex gap-x-8 justify-between">
+        <div className="flex justify-between max-w-screen-lg mx-auto -mb-40 -translate-y-48 gap-x-8">
           {data.map((item) => (
             <div
               key={item.id}
-              className="shadow-sm rounded-xl p-10 bg-white flex-1 border border-black hover:bg-orange-100 hover:border-orange-500"
+              className="flex-1 p-10 bg-white border border-black shadow-sm rounded-xl hover:bg-orange-100 hover:border-orange-500"
             >
               <div className="text-center h-80">
                 <h3 className="text-2xl font-semibold">{item.title}</h3>
                 <p className="text-gray-500">{item.sub_title}</p>
-                <h5 className="text-5xl text-violet-500 mt-7 font-bold">$0</h5>
-                <h6 className="text-xl font-semibold mb-5">100% free</h6>
+                <h5 className="text-5xl font-bold text-violet-500 mt-7">$0</h5>
+                <h6 className="mb-5 text-xl font-semibold">100% free</h6>
                 <p className="text-gray-500 underline">
                   See all Accountiong feature
                 </p>
@@ -78,10 +78,10 @@ const Pricing = () => {
         </div>
 
         <div className="max-w-screen-lg mx-auto">
-          <div className="shadow-sm rounded p-10 bg-white grid gap-x-8 lg:grid-cols-3">
+          <div className="grid p-10 bg-white rounded shadow-sm gap-x-8 lg:grid-cols-3">
             <div>
               <h5>Add on</h5>
-              <h3 className="text-2xl font-bold py-3">Recruitment (ATA)</h3>
+              <h3 className="py-3 text-2xl font-bold">Recruitment (ATA)</h3>
               <p className="text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Provident blanditiis voluptates et, maiores rerum dolorem
@@ -90,7 +90,7 @@ const Pricing = () => {
             </div>
 
             <div className="border border-gray-200 rounded">
-              <p className="border-b border-gray-200 p-3">
+              <p className="p-3 border-b border-gray-200">
                 <b className="text-lg">Basic</b> - 10 job offers
               </p>
               <div className="p-3">
@@ -102,7 +102,7 @@ const Pricing = () => {
             </div>
 
             <div className="border border-gray-200 rounded">
-              <p className="border-b border-gray-200 p-3">
+              <p className="p-3 border-b border-gray-200">
                 <b className="text-lg">Basic</b> - 10 job offers
               </p>
               <div className="p-3">
@@ -118,17 +118,17 @@ const Pricing = () => {
 
       <div className="max-w-screen-lg mx-auto">
         {data2.map((item) => (
-          <div className="grid lg:grid-cols-3 gap-5 py-10">
+          <div className="grid gap-5 py-10 lg:grid-cols-3">
             <div className="flex flex-col items-center">
-              <button className="text-lg bg-orange-400 px-4 py-1 rounded-lg">
+              <button className="px-4 py-1 text-lg bg-orange-400 rounded-lg">
                 FREE
               </button>
-              <h3 className="text-3xl font-bold pt-2 pb-1">{item.title}</h3>
+              <h3 className="pt-2 pb-1 text-3xl font-bold">{item.title}</h3>
               <p>{item.sub_title}</p>
             </div>
             <div>
               {item.col_1.map((v) => (
-                <div className="flex gap-x-3 text-gray-600 tracking-wider">
+                <div className="flex tracking-wider text-gray-600 gap-x-3">
                   <AiOutlineCheck size={25} />
                   <p className="mb-5">{v}</p>
                 </div>
@@ -136,7 +136,7 @@ const Pricing = () => {
             </div>
             <div>
               {item.col_2.map((v) => (
-                <div className="flex gap-x-3 text-gray-600 tracking-wider">
+                <div className="flex tracking-wider text-gray-600 gap-x-3">
                   <AiOutlineCheck size={25} />
                   <p className="mb-5">{v}</p>
                 </div>

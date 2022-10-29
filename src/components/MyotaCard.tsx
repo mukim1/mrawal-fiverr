@@ -8,7 +8,7 @@ import Flag from "./SmComponent/Flag";
 
 const MyotaCard = () => {
   return (
-    <Card1 cls="grid grid-cols-2 overflow-hidden border-t mt-20 p-0 relative">
+    <Card1 cls="hidden md:grid grid-cols-2 overflow-hidden border-t mt-20 p-0 relative">
       <div className="p-10">
         <div className="flex justify-between mb-10">
           <h3 className="text-3xl font-bold">myota</h3>

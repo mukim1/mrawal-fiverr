@@ -7,7 +7,7 @@ import Title from "../Texts";
 const UnlockGrowth = () => {
   return (
     <div className="bg-white">
-      <Section cls="grid grid-cols-2 gap-1">
+      <Section cls="grid md:grid-cols-2 gap-1">
         <div className="flex flex-col justify-between">
           <Title>Unlock global growth</Title>
           <p className="text-lg ">

@@ -21,7 +21,7 @@ const TrustedBy = () => {
       </div>
       <MyotaCard />
 
-      <div className="grid grid-cols-2 my-10 text-lg gap-x-5">
+      <div className="grid my-10 text-lg md:grid-cols-2 gap-x-5">
         <Card1>
           <div className="p-5 ">
             <div className="flex justify-between mb-10">
