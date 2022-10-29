@@ -8,13 +8,13 @@ import Button from "../SmComponent/Button";
 
 const index = () => {
   return (
-    <div className="bg-[#1C1950] h-[800px] text-white">
-      <Section cls="grid grid-cols-2">
-        <div className="px-12 pt-20 pb-10">
-          <h2 className="text-5xl font-[500] mt">
+    <div className="bg-[#1C1950] md:h-[800px] h-[400px] text-white">
+      <Section cls="grid md:grid-cols-2 gird-col-1">
+        <div className=" md:px-12 px-1 md:pt-20 md:pb-10 pt-0 pb-0">
+          <h2 className="md:text-5xl text-4xl font-[500]">
             See what Lano can do for you
           </h2>
-          <p className="my-2 text-lg">
+          <p className="my-2 text-sm md:text-lg">
             One smart platform with everything you need to build and pay your
             global team. Do you have questions about our solutions, pricing or
             do you need a consultation? Fill out the form and well get back to
@@ -41,9 +41,9 @@ const index = () => {
           </div>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 hidden md:block">
           <Card1>
-            <div className="p-10 ">
+            <div className="p-10">
               <h2 className=" text-[#1a1838] text-2xl">
                 Book your free Lano demo to start growing your global team
               </h2>
@@ -122,7 +122,9 @@ const index = () => {
                     <p className="text-black ">I have promo code </p>
                   </div>
                   <div className="flex items-center gap-5 mt-5 ">
-                    <Button />{" "}
+                    <button className=" px-8 py-4 bg-blue-700 rounded-lg">
+                      choose item{" "}
+                    </button>
                     <p className="text-lg font-semibold text-black ">
                       Available at your preferred time
                     </p>

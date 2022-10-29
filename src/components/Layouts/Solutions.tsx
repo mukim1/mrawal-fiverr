@@ -20,7 +20,7 @@ const Solutions = ({ children, bg, title, featureImg }: Props) => {
   console.log(bg);
   return (
     <Layout>
-      <div className="mt-24">
+      <div className="mt-20">
         <Tabs
           color="yellow"
           value={pathname}

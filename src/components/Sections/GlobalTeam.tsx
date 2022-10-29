@@ -19,7 +19,7 @@ const GlobalTeam = () => {
       </div>
 
       <div className="grid justify-between my-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8">
-        <Card1 cls="bg-[#1A1838] text-white sm:col-span-2 md:col-span-2 lg:col-span-2 flex flex-col items-center justify-center">
+        <Card1 cls="bg-[#1A1838] text-white sm:col-span-2 md:col-span-2 lg:col-span-2 flex flex-col items-center justify-center mb-5 md:mb-0">
           <h3 className="text-[30px] font-[500] w-3/5 text-center">
             Hire top talent and run payroll anywhere
           </h3>
@@ -27,7 +27,7 @@ const GlobalTeam = () => {
             From compliant contracts to international payments, get everything
             you need to build the best team on the planet.
           </p>
-          <div className="mt-5 text-center ">
+          <div className="mt-5 text-center pb-3 md:pb-0">
             <Button />
           </div>
         </Card1>

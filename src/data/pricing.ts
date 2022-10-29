@@ -3,6 +3,8 @@ export const data2 = [
     id: 1,
     title: "Invoicing",
     sub_title: "Look like a pro",
+    type: "FREE",
+    type_bg: "#F69870",
     col_1: [
       "Look professional, even in your sweat pants.",
       "Create customized invoices that reflect your unique brand.",
@@ -16,6 +18,8 @@ export const data2 = [
     id: 2,
     title: "Accounting",
     sub_title: "Always be organized",
+    type: "FREE",
+    type_bg: "#F69870",
     col_1: [
       "Get unlimited income and expense tracking.",
       "Add unlimited partners, collaborators, or accountants.",
@@ -30,6 +34,8 @@ export const data2 = [
     id: 3,
     title: "Banking",
     sub_title: "Ditch fees and bookkeeping",
+    type: "free",
+    type_bg: "#F69870",
     col_1: [
       "Keep business and personal expenses separate to seriously simplify tax season.",
       "Normally we charge for Instant Payouts. For you? Free.",
@@ -43,6 +49,8 @@ export const data2 = [
     id: 4,
     title: "Payments",
     sub_title: "Get paid faster",
+    type: "PAY-PER-USE",
+    type_bg: "#9A9EF5",
     col_1: [
       "Give clients the flexibility of paying you via bank deposit, credit card, and Apple Pay.",
       "Manual entry? Cut. It. Out. Wave invoice payments automatically sync to your accounting dashboard.",
@@ -56,6 +64,8 @@ export const data2 = [
     id: 5,
     title: "Payroll",
     sub_title: "Pay staff in minutes",
+    type: "MONTHLY",
+    type_bg: "#78B7F2",
     col_1: [
       "Pay employees and contractors with more ease than ever.",
       "Deposit payments into employee's bank accounts in one click.",
@@ -67,9 +77,11 @@ export const data2 = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Advisors",
     sub_title: "Access experts, any time",
+    type: "PICK A PLAN",
+    type_bg: "#30DFE8",
     col_1: [
       "Get coaching or support from our team of bookkeeping, accounting, and payroll experts.",
       "Perfect for accounting newbies and those who want to become Wave power users.",

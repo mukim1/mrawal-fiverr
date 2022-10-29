@@ -9,10 +9,10 @@ const Pricing = () => {
   return (
     <Layout>
       <div className="px-5 pt-32 md:px-0">
-        <h1 className="text-5xl leading-snug text-center text-gray-700">
-          Everything you need. <br /> Nothing you don't.
+        <h1 className="text-3xl lg:text-5xl leading-snug text-center text-gray-700">
+          Everything you need. <br /> Nothing you dont.
         </h1>
-        <h1 className="my-10 text-xl tracking-wider text-center text-gray-600">
+        <h1 className="my-6 lg:my-10 lg:text-xl tracking-wider text-center text-gray-600">
           Our bookkeeping and banking tools can be used separately or together{" "}
           <br /> for maximum control of your business finances.
         </h1>
@@ -33,7 +33,7 @@ const Pricing = () => {
             className="w-full"
           />
           <div className="w-full">
-            <button className="w-full px-8 py-3 mt-10 text-lg font-semibold rounded-full bg-fuchsia-300 lg:mt-0">
+            <button className="w-full py-3 mt-10 text-lg font-semibold rounded-full bg-fuchsia-300 lg:mt-0">
               Create your free account
             </button>
           </div>
@@ -45,7 +45,7 @@ const Pricing = () => {
           <div className="h-[1px] bg-blue-500 flex-1"></div>
         </div>
 
-        <div className="mx-auto w-96">
+        <div className="mx-auto w-full lg:w-96">
           <button className="w-full px-8 py-3 text-lg font-semibold text-white bg-blue-400 rounded-full">
             Create your free account
           </button>
@@ -57,8 +57,8 @@ const Pricing = () => {
         </div>
       </div>
 
-      <div className="h-screen bg-blue-900 mt-60">
-        <div className="flex justify-between max-w-screen-lg mx-auto -mb-40 -translate-y-48 gap-x-8">
+      <div className="min-h-screen lg:bg-blue-900 mt-60 px-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between max-w-screen-lg mx-auto -mb-40 -translate-y-48 gap-8">
           {data.map((item) => (
             <div
               key={item.id}
@@ -116,19 +116,25 @@ const Pricing = () => {
         </div>
       </div>
 
-      <div className="max-w-screen-lg mx-auto">
+      <div className="max-w-screen-lg mx-auto px-5">
         {data2.map((item) => (
-          <div className="grid gap-5 py-10 lg:grid-cols-3">
+          <div key={item.id} className="grid gap-5 py-10 lg:grid-cols-3">
             <div className="flex flex-col items-center">
-              <button className="px-4 py-1 text-lg bg-orange-400 rounded-lg">
-                FREE
+              <button
+                className={`px-4 py-1 text-lg  rounded-lg`}
+                style={{ backgroundColor: item.type_bg }}
+              >
+                {item.type}
               </button>
               <h3 className="pt-2 pb-1 text-3xl font-bold">{item.title}</h3>
               <p>{item.sub_title}</p>
             </div>
             <div>
               {item.col_1.map((v) => (
-                <div className="flex tracking-wider text-gray-600 gap-x-3">
+                <div
+                  key={v}
+                  className="flex tracking-wider text-gray-600 gap-x-3"
+                >
                   <AiOutlineCheck size={25} />
                   <p className="mb-5">{v}</p>
                 </div>
@@ -136,7 +142,10 @@ const Pricing = () => {
             </div>
             <div>
               {item.col_2.map((v) => (
-                <div className="flex tracking-wider text-gray-600 gap-x-3">
+                <div
+                  key={v}
+                  className="flex tracking-wider text-gray-600 gap-x-3"
+                >
                   <AiOutlineCheck size={25} />
                   <p className="mb-5">{v}</p>
                 </div>

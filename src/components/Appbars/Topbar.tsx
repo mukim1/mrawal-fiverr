@@ -1,15 +1,10 @@
-import { Button, Menu } from "@mantine/core";
 import React, { useEffect, useState } from "react";
-import { handleThemeChange } from "../../utils/utils";
-import { CiSettings } from "react-icons/ci";
 import Link from "next/link";
 import { TfiWorld } from "react-icons/tfi";
 import { PhoneNenu, Resources, Solutions } from "./TBDropdowns";
-import { AiOutlineMenu } from "react-icons/ai";
 
 const Topbar = () => {
   const [navBg, setNavBg] = useState(false);
-  // const isHome = props.name === 'Homepage' ? true : false;
 
   const changeNavBg = () => {
     window.scrollY >= 100 ? setNavBg(true) : setNavBg(false);
@@ -22,21 +17,21 @@ const Topbar = () => {
     };
   }, []);
 
-  console.log(navBg);
-
   return (
     <div
-      className={`fixed top-0 z-10 w-full shadow-sm transition px-10 ${
+      className={`fixed top-0 z-10 w-full shadow-sm transition px-5 ${
         navBg ? "bg-white text-black" : "bg-[#162473] text-white"
       }`}
     >
-      <div className="flex items-center justify-between h-24 md:px-10">
+      <div className="flex items-center justify-between h-20 md:px-10">
         <div className="relative flex items-center justify-between gap-x-10">
           <Link href="/">
             <a
-              className={`text-3xl font-bold ${navBg ? "text-green-500" : ""}`}
+              className={`text-4xl font-[Ubuntu] font-extrabold ${
+                navBg ? " text-teal-400" : ""
+              }`}
             >
-              Lano
+              lano
             </a>
           </Link>
 
@@ -56,22 +51,21 @@ const Topbar = () => {
             </Link>
           </div>
 
-          <Link href="#">
+          <Link href="/">
             <a className="text-lg font-semibold hover:border-b-2">Login</a>
           </Link>
-          <Button
-            className="border-[#3f4a83] hover:bg-[#162473] hover:border-white"
-            variant="outline"
-            color="indigo"
-            radius="md"
-            size="lg"
-          >
-            Book a demo
-          </Button>
+          <Link href={"/"}>
+            <button
+              className={`py-2 px-3 rounded-lg border ${
+                navBg ? "bg-blue-700 text-white" : " border-gray-500"
+              }`}
+            >
+              Book a demo
+            </button>
+          </Link>
         </div>
 
         <span className="cursor-pointer md:hidden">
-          {/* <AiOutlineMenu size={22} /> */}
           <PhoneNenu />
         </span>
       </div>

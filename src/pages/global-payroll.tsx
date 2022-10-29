@@ -20,7 +20,6 @@ const GlobalPayroll = () => {
       </Section>
       <UnlockGrowth />
       <GlobalTeam />
-      <div className="h-96"></div>
       <WhyDoLano />
     </Solutions>
   );

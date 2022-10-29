@@ -181,12 +181,73 @@ export const PhoneNenu = () => (
             <AiOutlineClose size={22} />
           </Menu.Target>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed sint
-          porro eius, quidem exercitationem praesentium reprehenderit velit vel
-          consectetur error, reiciendis impedit, vero aliquam nobis dolor
-          voluptate nihil magnam eaque!
-        </p>
+        <div className=" flex flex-col">
+          <div className=" my-2">
+            <Link href="/">
+              <a className=" font-bold capitalize text-lg hover:underline">
+                Home
+              </a>
+            </Link>
+          </div>
+          <div className=" my-2">
+            <Link href="/">
+              <a className=" font-bold capitalize text-lg hover:underline">
+                Solution
+              </a>
+            </Link>
+          </div>
+          <div className=" my-2">
+            <Link href="/">
+              <a className=" font-bold capitalize text-lg hover:underline">
+                Pricing
+              </a>
+            </Link>
+          </div>
+
+          <div className="flex  gap-6 my-2 ">
+            <BsGlobe2 className="text-blue-400" size={30} />
+
+            <div className="flex flex-col ">
+              <Link href="/global-employment">
+                <a className="text-lg text-black ">Hire Global Employeess</a>
+              </Link>
+            </div>
+          </div>
+          <div className="flex  gap-6 my-2 ">
+            <BsBank2 className="text-blue-400" size={30} />
+            <div className="flex flex-col ">
+              <Link href="/contractor-management">
+                <a className="text-lg text-black ">Manage Contractors</a>
+              </Link>
+            </div>
+          </div>
+          <div className="flex  gap-6 my-2 ">
+            <TbFileDollar className="text-blue-400" size={30} />
+            <div className="flex flex-col ">
+              <Link href="/global-payroll">
+                <a className="text-lg text-black ">Run Global Payroll</a>
+              </Link>
+            </div>
+          </div>
+          <div className="flex  gap-6 my-2 ">
+            <FaMoneyCheckAlt className="text-blue-400" size={30} />
+            <div className="flex flex-col ">
+              <Link href="/global-payments">
+                <a className="text-lg text-black ">Pay Remote Teams</a>
+              </Link>
+            </div>
+          </div>
+          <div className=" my-2">
+            <Link href="/">
+              <a>Privacy Policy</a>
+            </Link>
+          </div>
+          <div className=" my-2">
+            <Link href="/">
+              <a>Help Center</a>
+            </Link>
+          </div>
+        </div>
       </div>
     </Menu.Dropdown>
   </Menu>
