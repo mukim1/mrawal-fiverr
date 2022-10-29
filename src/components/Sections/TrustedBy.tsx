@@ -6,18 +6,15 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import Title from "../Texts";
 import MyotaCard from "../MyotaCard";
 import Flag from "../SmComponent/Flag";
+import ArrowButton from "../SmComponent/ArrowButton";
 
 const TrustedBy = () => {
   return (
     <React.Fragment>
       <div className="flex items-center justify-between">
         <Title cls="lg:w-2/5">Trusted by thousands of market leaders</Title>
-        <div className="flex items-center gap-2 text-blue-700 hover:underline">
-          <Link href="#">
-            <a className="text-xl capitalize ">see all case studies</a>
-          </Link>
-          <AiOutlineArrowRight />
-        </div>
+
+        <ArrowButton text="see all case studies" />
       </div>
       <MyotaCard />
 

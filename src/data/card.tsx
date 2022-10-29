@@ -4,30 +4,29 @@ export const data = [
   {
     id: 1,
     icon: 11,
-    title: "Toolkit to unlock global growth",
+    title: "Fast-track international expansion",
     description:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci placeat enim atque tempora obcaecati.",
+      " Meet your global growth goals by simplifying international hiring and payments.",
   },
   {
     id: 2,
     icon: 22,
-    title: "Toolkit to unlock global growth",
+    title: "Put payroll operations on autopilot",
     description:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci placeat enim atque tempora obcaecati.",
+      " Manage your global payroll in one place, streamline payments in 50+ currencies. ",
   },
   {
     id: 3,
     icon: 33,
-    title: "Toolkit to unlock global growth",
+    title: "Access global talent and hire faster",
     description:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci placeat enim atque tempora obcaecati.",
+      " Hire full-time employees or contractors anywhere in less than 1 week.",
   },
   {
     id: 4,
-    icon: 33,
-    title: "Toolkit to unlock global growth",
-    description:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci placeat enim atque tempora obcaecati.",
+    icon: 44,
+    title: "Get your compliance in good shape",
+    description: "Navigate complex local employment laws and tax requirements.",
   },
   {
     id: 5,

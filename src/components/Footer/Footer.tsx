@@ -36,7 +36,7 @@ const Footer = () => {
 
       {/* BOTTON BAR */}
       <div className="flex items-center justify-between mt-20 ">
-        <div className="flex gap-3 ">
+        <div className="flex gap-3 flex-col md:flex-row">
           <button className="px-5 py-2 text-white bg-gray-500 rounded-lg hover:underline">
             We’re hiring{" "}
           </button>
