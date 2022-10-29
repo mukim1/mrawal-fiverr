@@ -8,6 +8,7 @@ import {
   FaProductHunt,
   FaUserFriends,
 } from "react-icons/fa";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 export const Solutions = () => {
   return (
@@ -167,6 +168,29 @@ export const Resources = () => {
     </TBDropdown>
   );
 };
+
+export const PhoneNenu = () => (
+  <Menu openDelay={100} closeDelay={400} offset={-60}>
+    <Menu.Target>
+      <AiOutlineMenu size={22} />
+    </Menu.Target>
+    <Menu.Dropdown sx={{ borderRadius: 0 }}>
+      <div className="relative w-screen min-h-screen p-10 pt-8 text-black">
+        <div className="flex justify-end">
+          <Menu.Target>
+            <AiOutlineClose size={22} />
+          </Menu.Target>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed sint
+          porro eius, quidem exercitationem praesentium reprehenderit velit vel
+          consectetur error, reiciendis impedit, vero aliquam nobis dolor
+          voluptate nihil magnam eaque!
+        </p>
+      </div>
+    </Menu.Dropdown>
+  </Menu>
+);
 
 const TBDropdown = ({ children, name }: TBDropdownProp) => (
   <Menu trigger="hover" openDelay={100} closeDelay={400} offset={-60}>
