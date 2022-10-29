@@ -181,30 +181,23 @@ export const PhoneNenu = () => (
             <AiOutlineClose size={22} />
           </Menu.Target>
         </div>
-        <div className=" flex flex-col">
-          <div className=" my-2">
+        <div className="flex flex-col ">
+          <div className="my-2 ">
             <Link href="/">
-              <a className=" font-bold capitalize text-lg hover:underline">
+              <a className="text-lg font-bold capitalize hover:underline">
                 Home
               </a>
             </Link>
           </div>
-          <div className=" my-2">
-            <Link href="/">
-              <a className=" font-bold capitalize text-lg hover:underline">
+          <div className="my-2 ">
+            <Link href="/global-employment">
+              <a className="text-lg font-bold capitalize hover:underline">
                 Solution
               </a>
             </Link>
           </div>
-          <div className=" my-2">
-            <Link href="/">
-              <a className=" font-bold capitalize text-lg hover:underline">
-                Pricing
-              </a>
-            </Link>
-          </div>
 
-          <div className="flex  gap-6 my-2 ">
+          <div className="flex gap-6 my-2 ">
             <BsGlobe2 className="text-blue-400" size={30} />
 
             <div className="flex flex-col ">
@@ -213,7 +206,7 @@ export const PhoneNenu = () => (
               </Link>
             </div>
           </div>
-          <div className="flex  gap-6 my-2 ">
+          <div className="flex gap-6 my-2 ">
             <BsBank2 className="text-blue-400" size={30} />
             <div className="flex flex-col ">
               <Link href="/contractor-management">
@@ -221,7 +214,7 @@ export const PhoneNenu = () => (
               </Link>
             </div>
           </div>
-          <div className="flex  gap-6 my-2 ">
+          <div className="flex gap-6 my-2 ">
             <TbFileDollar className="text-blue-400" size={30} />
             <div className="flex flex-col ">
               <Link href="/global-payroll">
@@ -229,7 +222,7 @@ export const PhoneNenu = () => (
               </Link>
             </div>
           </div>
-          <div className="flex  gap-6 my-2 ">
+          <div className="flex gap-6 my-2 ">
             <FaMoneyCheckAlt className="text-blue-400" size={30} />
             <div className="flex flex-col ">
               <Link href="/global-payments">
@@ -237,14 +230,25 @@ export const PhoneNenu = () => (
               </Link>
             </div>
           </div>
-          <div className=" my-2">
-            <Link href="/">
-              <a>Privacy Policy</a>
+          <div className="my-2 ">
+            <Link href="/pricing">
+              <a className="text-lg font-bold capitalize hover:underline">
+                Pricing
+              </a>
             </Link>
           </div>
-          <div className=" my-2">
-            <Link href="/">
-              <a>Help Center</a>
+          <div className="my-2 ">
+            <Link href="/privacypolicy">
+              <a className="text-lg font-bold capitalize hover:underline">
+                Privacy Policy
+              </a>
+            </Link>
+          </div>
+          <div className="my-2 ">
+            <Link href="https://intercom.help/lano/en/">
+              <a className="text-lg font-bold capitalize hover:underline">
+                Help Center
+              </a>
             </Link>
           </div>
         </div>
