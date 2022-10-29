@@ -18,7 +18,7 @@ const Sections = ({ data, model }: Props) => {
     <div className="my-10">
       {data.map((v: any, i: any) => (
         <div
-          className="grid justify-between px-5 my-10 lg:mx-20 md:grid-cols-2 md:my-40"
+          className="grid justify-between my-10 lg:mx-20 md:grid-cols-2 md:my-40"
           key={i}
         >
           {model === "A" ? (
