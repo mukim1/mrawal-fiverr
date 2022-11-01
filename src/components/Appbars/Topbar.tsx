@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { TfiWorld } from "react-icons/tfi";
+import Image from "next/image";
 import { PhoneNenu, Resources, Solutions } from "./TBDropdowns";
 
 const Topbar = () => {
@@ -31,7 +32,13 @@ const Topbar = () => {
                 navBg ? " text-teal-400" : ""
               }`}
             >
-              lano
+              <Image
+                className="text-white "
+                width={100}
+                height={100}
+                alt=""
+                src={`/assets/logo.png`}
+              />
             </a>
           </Link>
 
