@@ -41,23 +41,35 @@ const Topbar = () => {
             <Link href={"/pricing"}>
               <a className="text-[16px] hover:underline">Pricing</a>
             </Link>
+            <Link href={"/about-us"}>
+              <a className="text-[16px] hover:underline">About Us</a>
+            </Link>
           </div>
         </div>
 
         <div className="items-center justify-between hidden md:flex gap-x-6">
-          <div className="p-2 rounded hover:text-black">
+          {/* <div className="p-2 rounded hover:text-black">
             <Link href="#">
               <TfiWorld size={16} />
             </Link>
-          </div>
+          </div> */}
 
-          <Link href="/">
+          {/* <Link href="/">
             <a className="text-lg font-semibold hover:border-b-2">Login</a>
+          </Link> */}
+          <Link href={"/"}>
+            <button
+              className={`py-2 px-3 rounded-lg ${
+                navBg ? "bg-blue-700 text-white" : " bg-blue-700 text-white"
+              }`}
+            >
+              Sign up - its free
+            </button>
           </Link>
           <Link href={"/"}>
             <button
-              className={`py-2 px-3 rounded-lg border ${
-                navBg ? "bg-blue-700 text-white" : " border-gray-500"
+              className={`py-2 px-3 rounded-lg ${
+                navBg ? "bg-blue-700 text-white" : " bg-blue-700 text-white"
               }`}
             >
               Book a demo
