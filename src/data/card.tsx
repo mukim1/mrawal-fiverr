@@ -35,11 +35,11 @@ export const data = [
     description:
       " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci placeat enim atque tempora obcaecati.",
   },
-  {
-    id: 6,
-    icon: 44,
-    title: "Toolkit to unlock global growth",
-    description:
-      " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci placeat enim atque tempora obcaecati.",
-  },
+  // {
+  //   id: 6,
+  //   icon: 44,
+  //   title: "Toolkit to unlock global growth",
+  //   description:
+  //     " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci placeat enim atque tempora obcaecati.",
+  // },
 ];
