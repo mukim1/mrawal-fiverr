@@ -24,7 +24,9 @@ const Solutions = ({ children, bg, title, featureImg }: Props) => {
         <Tabs
           color="yellow"
           value={pathname}
-          className={`${bg ? bg : "bg-[#162473]"} border-t border-gray-600`}
+          className={`${
+            bg ? "bg-[#004650]" : "bg-[#004650]"
+          } border-t border-gray-600`}
         >
           <Tabs.List position="center">
             {data.map((item, i) => (
@@ -42,7 +44,11 @@ const Solutions = ({ children, bg, title, featureImg }: Props) => {
           </Tabs.List>
         </Tabs>
 
-        <div className={`text-white text-center ${bg ? bg : "bg-[#162473]"}`}>
+        <div
+          className={`text-white text-center ${
+            bg ? "bg-[#004650]" : "bg-[#004650]"
+          }`}
+        >
           <div className="flex items-center justify-center pt-16 pb-10">
             <AiFillStar className=" text-[#FFB312]" />
             <p className="pl-3 text-base">4.9/5 on Capterra</p>

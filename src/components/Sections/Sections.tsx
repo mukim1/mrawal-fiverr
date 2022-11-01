@@ -46,10 +46,10 @@ const Part1 = ({ v, A }: any) => (
     }`}
   >
     <Title>{v.title}</Title>
-    <p className="md:my-5 md:text-lg lg:text-xl">{v.description}</p>
+    <p className="md:my-5 md:mb-8 md:text-lg lg:text-lg">{v.description}</p>
     <div className="flex items-center gap-1 font-semibold text-blue-600 hover:underline">
       <Link href={v.link}>
-        <a className="text-base lg:text-xl">Learn more</a>
+        <a className="text-base lg:text-lg">Learn more</a>
       </Link>
       <AiOutlineArrowRight />
     </div>

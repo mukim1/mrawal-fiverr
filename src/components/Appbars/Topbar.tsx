@@ -21,7 +21,7 @@ const Topbar = () => {
   return (
     <div
       className={`fixed top-0 z-10 w-full shadow-sm transition px-5 ${
-        navBg ? "bg-white text-black" : "bg-[#162473] text-white"
+        navBg ? "bg-white text-black" : "bg-[#004650] text-white"
       }`}
     >
       <div className="flex items-center justify-between h-20 md:px-10">
@@ -33,11 +33,12 @@ const Topbar = () => {
               }`}
             >
               <Image
-                className="text-white "
+                // className={`${navBg ? "" : " brightness-200"}`}
                 width={100}
-                height={100}
+                height={30}
                 alt=""
-                src={`/assets/logo.png`}
+                src={navBg?`/assets/logo.png`:`/assets/logo2.png`}
+                // objectFit="cover"
               />
             </a>
           </Link>
@@ -61,10 +62,10 @@ const Topbar = () => {
             </Link>
           </div> */}
 
-          {/* <Link href="/">
+          <Link href="/">
             <a className="text-lg font-semibold hover:border-b-2">Login</a>
-          </Link> */}
-          <Link href={"/"}>
+          </Link>
+          {/* <Link href={"/"}>
             <button
               className={`py-2 px-3 rounded-lg ${
                 navBg ? "bg-blue-700 text-white" : " bg-blue-700 text-white"
@@ -72,14 +73,16 @@ const Topbar = () => {
             >
               Sign up - its free
             </button>
-          </Link>
+          </Link> */}
           <Link href={"/"}>
             <button
-              className={`py-2 px-3 rounded-lg ${
-                navBg ? "bg-blue-700 text-white" : " bg-blue-700 text-white"
+              className={`py-2 px-3 rounded-lg  ${
+                navBg
+                  ? "bg-blue-700 text-white"
+                  : "border border-gray-600 hover:border-gray-400"
               }`}
             >
-              Book a demo
+              Sign up for free
             </button>
           </Link>
         </div>

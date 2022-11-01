@@ -6,7 +6,7 @@ const ArrowButton = ({ text }: Props) => {
   return (
     <div className="flex items-center gap-2 text-blue-700 hover:underline">
       <Link href="#">
-        <a className="md:text-xl text-sm capitalize ">{text}</a>
+        <a className="text-sm capitalize md:text-lg ">{text}</a>
       </Link>
       <AiOutlineArrowRight />
     </div>

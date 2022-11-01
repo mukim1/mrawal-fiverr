@@ -13,7 +13,7 @@ import { Accordion } from "@mantine/core";
 const Footer = () => {
   return (
     <div className="bg-black md:p-14">
-      <div className="hidden md:grid text-white sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+      <div className="hidden text-white md:grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         <div className="hidden col-span-2 md:block md:col-span-1">
           <h2 className="mb-10 text-5xl font-bold">lano</h2>
           <p className="mb-2">Imprint</p>
@@ -23,7 +23,7 @@ const Footer = () => {
         {data.map((v) => (
           <div className="" key={v.title}>
             <Link href={"/"}>
-              <a className="text-xl font-semibold block mb-3">{v.title}</a>
+              <a className="block mb-3 text-xl font-semibold">{v.title}</a>
             </Link>
 
             {v.item.map((v2) => (
@@ -56,7 +56,7 @@ const Footer = () => {
 
       {/* BOTTON BAR */}
       <div className="flex items-center justify-between mt-20 ">
-        <div className="flex gap-3 flex-col md:flex-row">
+        <div className="flex flex-col gap-3 md:flex-row">
           <button className="px-5 py-2 text-white bg-gray-500 rounded-lg hover:underline">
             We’re hiring{" "}
           </button>
@@ -97,39 +97,6 @@ const Footer = () => {
 
 export default Footer;
 const data = [
-  {
-    title: "Solutions",
-    item: [
-      {
-        item: "Hire Employees",
-        link: "/",
-      },
-      {
-        item: "Run Global Payroll",
-        link: "/",
-      },
-      {
-        item: "Multi-Country Payroll",
-        link: "/",
-      },
-      {
-        item: "Global Salary Payments",
-        link: "/",
-      },
-      {
-        item: "Payroll Consolidation",
-        link: "/",
-      },
-      {
-        item: "Manage Contractors",
-        link: "/",
-      },
-      {
-        item: "Pay Remote Teams",
-        link: "/",
-      },
-    ],
-  },
   {
     title: "For Companies",
     item: [
@@ -210,3 +177,36 @@ const data = [
     ],
   },
 ];
+// {
+//   title: "Solutions",
+//   item: [
+//     {
+//       item: "Hire Employees",
+//       link: "/",
+//     },
+//     {
+//       item: "Run Global Payroll",
+//       link: "/",
+//     },
+//     {
+//       item: "Multi-Country Payroll",
+//       link: "/",
+//     },
+//     {
+//       item: "Global Salary Payments",
+//       link: "/",
+//     },
+//     {
+//       item: "Payroll Consolidation",
+//       link: "/",
+//     },
+//     {
+//       item: "Manage Contractors",
+//       link: "/",
+//     },
+//     {
+//       item: "Pay Remote Teams",
+//       link: "/",
+//     },
+//   ],
+// },
