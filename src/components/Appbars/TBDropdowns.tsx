@@ -2,13 +2,23 @@ import { Menu } from "@mantine/core";
 import { BsBank2, BsGlobe, BsGlobe2 } from "react-icons/bs";
 import Link from "next/link";
 import { TbFileDollar } from "react-icons/tb";
+import { MdPrivacyTip } from "react-icons/md";
+import { BiHelpCircle } from "react-icons/bi";
+import { FaAffiliatetheme } from "react-icons/fa";
 import {
   FaBlogger,
   FaMoneyCheckAlt,
   FaProductHunt,
   FaUserFriends,
 } from "react-icons/fa";
-import { AiFillCaretDown, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import {
+  AiFillApi,
+  AiFillCaretDown,
+  AiFillCompass,
+  AiOutlineApi,
+  AiOutlineClose,
+  AiOutlineMenu,
+} from "react-icons/ai";
 
 // export const Solutions = () => {
 //   return (
@@ -182,12 +192,64 @@ export const Solutions = () => {
           <span>Solutions</span> <AiFillCaretDown size={13} className="" />
         </button>
       </Menu.Target>
-      <Menu.Dropdown sx={{ color: "#000" }}>
-        <p>Lorem, ipsum dolor</p>
-        <p>Lorem, ipsum dolor</p>
-        <p>Lorem, ipsum dolor</p>
-        <p>Lorem, ipsum dolor</p>
-        <p>Lorem, ipsum dolor</p>
+      <Menu.Dropdown sx={{ color: "#000" }} className="p-5 shadow-lg">
+        <div className="flex gap-2 p-3 mb-3 rounded-lg hover:bg-gray-300">
+          <BsGlobe2 className="text-[#3b3b3b]" size={20} />
+
+          <div className="flex flex-col ">
+            <Link href="/global-employment">
+              <a className="text-lg text-[#3b3b3b] ">Hire Global Employeess</a>
+            </Link>
+          </div>
+        </div>
+        <div className="flex gap-2 p-3 mb-3 rounded-lg hover:bg-gray-300 ">
+          <BsBank2 className="text-[#3b3b3b]" size={20} />
+          <div className="flex flex-col ">
+            <Link href="/contractor-management">
+              <a className="text-lg text-[#3b3b3b] ">Manage Contractors</a>
+            </Link>
+          </div>
+        </div>
+        <div className="flex gap-2 p-3 mb-3 rounded-lg hover:bg-gray-300 ">
+          <TbFileDollar className="text-[#3b3b3b]" size={20} />
+          <div className="flex flex-col ">
+            <Link href="/global-payroll">
+              <a className="text-lg text-[#3b3b3b]">Run Global Payroll</a>
+            </Link>
+          </div>
+        </div>
+        <div className="flex gap-2 p-3 rounded-lg hover:bg-gray-300">
+          <FaMoneyCheckAlt className="text-[#3b3b3b]" size={20} />
+          <div className="flex flex-col ">
+            <Link href="/global-payments">
+              <a className="text-lg text-[#3b3b3b] ">Pay Remote Teams</a>
+            </Link>
+          </div>
+        </div>
+        <div className="flex gap-2 p-3 rounded-lg hover:bg-gray-300">
+          <AiOutlineApi className="text-[#3b3b3b]" size={20} />
+          <div className="flex flex-col ">
+            <Link href="/global-payments">
+              <a className="text-lg text-[#3b3b3b] ">API and Integrations</a>
+            </Link>
+          </div>
+        </div>
+        <div className="flex gap-2 p-3 rounded-lg hover:bg-gray-300">
+          <MdPrivacyTip className="text-[#3b3b3b]" size={20} />
+          <div className="flex flex-col ">
+            <Link href="/privacypolicy">
+              <a className="text-lg text-[#3b3b3b] ">Security and Privacy</a>
+            </Link>
+          </div>
+        </div>
+        <div className="flex gap-2 p-3 rounded-lg hover:bg-gray-300">
+          <AiFillCompass className="text-[#3b3b3b]" size={20} />
+          <div className="flex flex-col ">
+            <Link href="/global-payments">
+              <a className="text-lg text-[#3b3b3b] "> Global Compliance</a>
+            </Link>
+          </div>
+        </div>
       </Menu.Dropdown>
     </Menu>
   );
@@ -208,12 +270,56 @@ export const Resources = () => {
           <span>Resources</span> <AiFillCaretDown size={13} />
         </button>
       </Menu.Target>
-      <Menu.Dropdown sx={{color: "#000" }}>
-        <p>Lorem, ipsum dolor</p>
-        <p>Lorem, ipsum dolor</p>
-        <p>Lorem, ipsum dolor</p>
-        <p>Lorem, ipsum dolor</p>
-        <p>Lorem, ipsum dolor</p>
+      <Menu.Dropdown sx={{ color: "#000" }} className="p-5 shadow-lg">
+        <div className="flex gap-2 p-3 mb-3 rounded-lg hover:bg-gray-300">
+          <FaUserFriends className="text-[#3b3b3b]" size={20} />
+
+          <div className="flex flex-col ">
+            <Link href="/global-employment">
+              <a className="text-lg text-[#3b3b3b] ">Case Studies</a>
+            </Link>
+          </div>
+        </div>
+        <div className="flex gap-2 p-3 mb-3 rounded-lg hover:bg-gray-300 ">
+          <FaBlogger className="text-[#3b3b3b]" size={20} />
+          <div className="flex flex-col ">
+            <Link href="/contractor-management">
+              <a className="text-lg text-[#3b3b3b] ">Blog</a>
+            </Link>
+          </div>
+        </div>
+        <div className="flex gap-2 p-3 mb-3 rounded-lg hover:bg-gray-300 ">
+          <BsGlobe className="text-[#3b3b3b]" size={20} />
+          <div className="flex flex-col ">
+            <Link href="/global-payroll">
+              <a className="text-lg text-[#3b3b3b]">Global Hiring Guide</a>
+            </Link>
+          </div>
+        </div>
+        <div className="flex gap-2 p-3 rounded-lg hover:bg-gray-300">
+          <FaProductHunt className="text-[#3b3b3b]" size={20} />
+          <div className="flex flex-col ">
+            <Link href="/global-payments">
+              <a className="text-lg text-[#3b3b3b] ">Podcast</a>
+            </Link>
+          </div>
+        </div>
+        <div className="flex gap-2 p-3 rounded-lg hover:bg-gray-300">
+          <BiHelpCircle className="text-[#3b3b3b]" size={20} />
+          <div className="flex flex-col ">
+            <Link href="https://intercom.help/lano/en/">
+              <a className="text-lg text-[#3b3b3b] ">Help Center</a>
+            </Link>
+          </div>
+        </div>
+        <div className="flex gap-2 p-3 rounded-lg hover:bg-gray-300">
+          <FaAffiliatetheme className="text-[#3b3b3b]" size={20} />
+          <div className="flex flex-col ">
+            <Link href="/global-payments">
+              <a className="text-lg text-[#3b3b3b] ">Affiliate Program</a>
+            </Link>
+          </div>
+        </div>
       </Menu.Dropdown>
     </Menu>
   );

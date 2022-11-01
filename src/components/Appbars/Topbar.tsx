@@ -41,7 +41,7 @@ const Topbar = () => {
             <Link href={"/pricing"}>
               <a className="text-[16px] hover:underline">Pricing</a>
             </Link>
-            <Link href={"/about-us"}>
+            <Link href={"/about"}>
               <a className="text-[16px] hover:underline">About Us</a>
             </Link>
           </div>

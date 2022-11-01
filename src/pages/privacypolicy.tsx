@@ -6,7 +6,7 @@ import PrivacyPolicy from "../UI/Homepage/Privacy-policy/PrivacyPolicy";
 const privacypolicy = () => {
   return (
     <Layout>
-      <PrivacyPolicy />
+      <PrivacyPolicy text="Privacy Policy" />
     </Layout>
   );
 };
