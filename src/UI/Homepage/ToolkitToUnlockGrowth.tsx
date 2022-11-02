@@ -9,21 +9,27 @@ import Title from "../../components/Texts";
 
 const CardSection = () => {
   return (
-    <div className="my-20">
+    <div className="relative my-20">
       <div className="flex items-center justify-between mb-10 ">
-        <Title cls="lg:w-3/5">
-          The complete toolkit to unlock <br /> global growth
+        <Title cls="lg:w-3/6">
+          The complete toolkit to unlock global growth
         </Title>
-        <div className="flex gap-5 ">
+        {/* <div className="flex gap-5 ">
           <AiOutlineArrowLeft />
           <AiOutlineArrowRight />
-        </div>
+        </div> */}
       </div>
       <Carousel
         responsive={responsive}
-        itemClass="mr-5"
+        itemClass=""
+        infinite
         renderDotsOutside={false}
         showDots={false}
+        arrows={false}
+        customButtonGroup={<ButtonGroup />}
+        renderButtonGroupOutside={true}
+        draggable={true}
+        removeArrowOnDeviceType={["tablet", "mobile"]}
       >
         {data.map((v: any) => (
           <Helper key={v.id} v={v} />
@@ -42,7 +48,7 @@ const Helper = ({ v }: any) => {
       onMouseOver={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
-      <Card1 cls="hover:bg-blue-700 hover:text-white text-black h-[300px] overflow-hidden p-7">
+      <Card1 cls="hover:bg-blue-700 hover:text-white text-black h-[320px] overflow-hidden p-6 mx-2">
         <Image
           className={`${isHover ? "brightness-200" : "brightness-0"}`}
           src={`/images/${v.icon}.svg`}
@@ -51,14 +57,31 @@ const Helper = ({ v }: any) => {
           alt="I love africal black"
         />
         <div
-          className={`transition ${
-            isHover ? "translate-y-0" : "translate-y-24"
+          className={`transition duration-500 mt-5 ${
+            isHover ? "translate-y-0" : "translate-y-32 md:translate-y-28"
           }`}
         >
           <h3 className="mb-5 text-2xl">{v.title}</h3>
           <small className="">{v.description}</small>
         </div>
       </Card1>
+    </div>
+  );
+};
+
+const ButtonGroup = ({ next, previous, goToSlide, ...rest }: any) => {
+  // const {
+  //   carouselState: { totalItems, currentSlide },
+  // } = rest;
+
+  return (
+    <div className="absolute top-12 right-2">
+      <button onClick={previous} className="mr-6">
+        <AiOutlineArrowLeft size={20} />
+      </button>
+      <button onClick={next}>
+        <AiOutlineArrowRight size={20} />
+      </button>
     </div>
   );
 };
