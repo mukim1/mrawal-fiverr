@@ -5,6 +5,7 @@ import { TbFileDollar } from "react-icons/tb";
 import { MdPrivacyTip } from "react-icons/md";
 import { BiHelpCircle } from "react-icons/bi";
 import { FaAffiliatetheme } from "react-icons/fa";
+import Image from "next/image";
 import {
   FaBlogger,
   FaMoneyCheckAlt,
@@ -338,7 +339,8 @@ export const PhoneNenu = () => (
     </Menu.Target>
     <Menu.Dropdown sx={{ borderRadius: 0 }}>
       <div className="relative w-screen min-h-screen p-10 pt-8 text-black">
-        <div className="flex justify-end">
+        <div className="flex justify-between">
+          <Image src={`/assets/logo.png`} width={50} height={50} alt="" />
           <Menu.Target>
             <AiOutlineClose size={22} />
           </Menu.Target>

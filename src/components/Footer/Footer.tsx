@@ -13,17 +13,21 @@ import { Accordion } from "@mantine/core";
 
 const Footer = () => {
   return (
-    <div className="bg-[#004650] md:p-14">
+    <div className="bg-[#004152] md:p-14 lg:p-16">
       <div className="hidden text-white md:grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 lg:gap-10">
         <div className="hidden col-span-2 md:block md:col-span-1 ">
           <Image src={`/assets/logo2.png`} alt="" width={100} height={30} />
-          <p className="mt-5 text-lg">
+          {/* <p className="mt-5 text-lg">
             Omni HR helps companies automate their end-to-end employee journey
             including recruitment, onboarding, time off, employee management,
             and more.
+          </p> */}
+          <p className="mt-12 mb-2 text-[14px] font-[400] text-[#748095]">
+            Imprint
           </p>
-          {/* <p className="mb-2">Imprint</p>
-          <p>Privacy Policy</p> */}
+          <p className="text-[14px] font-[400] text-[#748095]">
+            Privacy Policy
+          </p>
           <div className="flex gap-8 mt-5 ">
             <div className="p-2 text-gray-300 rounded-full bg-slate-500 hover:text-white">
               <AiFillTwitterCircle size={25} />
@@ -44,11 +48,14 @@ const Footer = () => {
           {data.map((v) => (
             <div className="" key={v.title}>
               <Link href={"/"}>
-                <a className="block mb-3 text-xl font-semibold">{v.title}</a>
+                <a className="block mb-3 text-[16px] font-[500]">{v.title}</a>
               </Link>
 
               {v.item.map((v2) => (
-                <p className="py-2 text-sm " key={v2.item}>
+                <p
+                  className="py-2 text-[14px] font-[400] text-[#748095] "
+                  key={v2.item}
+                >
                   {v2.item}
                 </p>
               ))}
@@ -61,7 +68,7 @@ const Footer = () => {
         {data.map((v) => (
           <Accordion key={v.title}>
             <Accordion.Item value={v.title}>
-              <Accordion.Control className="text-white hover:bg-black">
+              <Accordion.Control className="text-white hover:bg-[#012d37]">
                 {v.title}
               </Accordion.Control>
               <Accordion.Panel sx={{ color: "white" }}>
@@ -106,12 +113,12 @@ const Footer = () => {
           />
         </div>
       </div> */}
-      <div className="text-white mt-14">
+      <div className="text-[#748095] mt-14 flex justify-between">
         <p className="">© Lano Software GmbH 2022</p>
-        {/* <div className="flex gap-2 ">
+        <div className="flex gap-2 ">
           <AiOutlineGlobal size={20} />
           <p>English</p>
-        </div> */}
+        </div>
       </div>
     </div>
   );

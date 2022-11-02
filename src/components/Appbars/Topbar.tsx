@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { TfiWorld } from "react-icons/tfi";
+
 import Image from "next/image";
 import { PhoneNenu, Resources, Solutions } from "./TBDropdowns";
 
@@ -37,7 +37,7 @@ const Topbar = () => {
                 width={100}
                 height={30}
                 alt=""
-                src={navBg?`/assets/logo.png`:`/assets/logo2.png`}
+                src={navBg ? `/assets/logo.png` : `/assets/logo2.png`}
                 // objectFit="cover"
               />
             </a>

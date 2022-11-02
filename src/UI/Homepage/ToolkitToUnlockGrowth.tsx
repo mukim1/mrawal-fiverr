@@ -21,7 +21,7 @@ const CardSection = () => {
       </div>
       <Carousel
         responsive={responsive}
-        itemClass=""
+        itemClass="mr-5"
         renderDotsOutside={false}
         showDots={false}
       >
