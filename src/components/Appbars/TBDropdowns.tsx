@@ -1,4 +1,4 @@
-import { Menu } from "@mantine/core";
+import { Accordion, Menu } from "@mantine/core";
 import { BsBank2, BsGlobe, BsGlobe2 } from "react-icons/bs";
 import Link from "next/link";
 import { TbFileDollar } from "react-icons/tb";
@@ -333,12 +333,40 @@ export const Resources = () => {
 };
 
 export const PhoneNenu = () => (
-  <Menu openDelay={100} closeDelay={400} offset={-60}>
+  <Menu openDelay={100} closeDelay={400} offset={30}>
     <Menu.Target>
-      <AiOutlineMenu size={22} />
+      <button>
+        <AiOutlineMenu size={22} />
+      </button>
     </Menu.Target>
     <Menu.Dropdown sx={{ borderRadius: 0 }}>
-      <div className="relative w-screen min-h-screen p-10 pt-8 text-black">
+      <div className="text-black w-screen p-1">
+        {phoneMenuItem.map((item) => (
+          <p key={item.name} className="text-[16px] text-[#3b3b3b]">
+            {item.link ? (
+              <Link href={item.link}>
+                <a className="px-4 block py-2">{item.name}</a>
+              </Link>
+            ) : (
+              <Accordion>
+                <Accordion.Item value={item.name}>
+                  <Accordion.Control className="">
+                    {item.name}
+                  </Accordion.Control>
+                  {item?.links?.map((link) => (
+                    <Accordion.Panel key={link.name}>
+                      <Link href={link.link}>
+                        <a className="block">{link.name}</a>
+                      </Link>
+                    </Accordion.Panel>
+                  ))}
+                </Accordion.Item>
+              </Accordion>
+            )}
+          </p>
+        ))}
+      </div>
+      {/* <div className="relative w-screen min-h-screen p-10 pt-8 text-black">
         <div className="flex justify-between">
           <Image src={`/assets/logo.png`} width={50} height={50} alt="" />
           <Menu.Target>
@@ -416,7 +444,7 @@ export const PhoneNenu = () => (
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </Menu.Dropdown>
   </Menu>
 );
@@ -436,3 +464,43 @@ interface TBDropdownProp {
   children: React.ReactNode;
   name: string;
 }
+
+const phoneMenuItem = [
+  {
+    name: "Home",
+    link: "/",
+  },
+  {
+    name: "Solution",
+    links: [
+      {
+        name: "Hire Global Employees",
+        link: "/global-employment",
+      },
+      {
+        name: "Manage Contractors",
+        link: "/contractor-management",
+      },
+      {
+        name: "Run Global Payroll",
+        link: "/global-payroll",
+      },
+      {
+        name: "Pay Remote Teams",
+        link: "/global-payments",
+      },
+    ],
+  },
+  {
+    name: "Pricing",
+    link: "/pricing",
+  },
+  {
+    name: "Privacy Policy",
+    link: "/privacypolicy",
+  },
+  {
+    name: "Help Center",
+    link: "https://intercom.help/lano/en/",
+  },
+];
