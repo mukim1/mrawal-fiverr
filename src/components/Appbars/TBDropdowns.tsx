@@ -333,7 +333,7 @@ export const Resources = () => {
 };
 
 export const PhoneNenu = () => (
-  <Menu openDelay={100} closeDelay={400} offset={30}>
+  <Menu openDelay={100} closeDelay={400} offset={-60}>
     <Menu.Target>
       <button>
         <AiOutlineMenu size={22} />
@@ -341,6 +341,14 @@ export const PhoneNenu = () => (
     </Menu.Target>
     <Menu.Dropdown sx={{ borderRadius: 0 }}>
       <div className="text-black w-screen p-1">
+        <div className="flex justify-between items-center p-2 ">
+          <Image src={`/assets/logo.png`} width={80} height={40} alt="" />
+          <Menu.Target>
+            <button>
+              <AiOutlineMenu size={22} />
+            </button>
+          </Menu.Target>
+        </div>
         {phoneMenuItem.map((item) => (
           <p key={item.name} className="text-[16px] text-[#3b3b3b]">
             {item.link ? (
@@ -466,10 +474,6 @@ interface TBDropdownProp {
 }
 
 const phoneMenuItem = [
-  {
-    name: "Home",
-    link: "/",
-  },
   {
     name: "Solution",
     links: [
