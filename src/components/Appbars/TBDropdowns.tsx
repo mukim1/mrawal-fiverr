@@ -341,12 +341,10 @@ export const PhoneNenu = () => (
     </Menu.Target>
     <Menu.Dropdown sx={{ borderRadius: 0 }}>
       <div className="text-black w-screen p-1">
-        <div className="flex justify-between items-center p-2 ">
+        <div className="flex justify-between items-center pl-2 pr-5 pt-5">
           <Image src={`/assets/logo.png`} width={80} height={40} alt="" />
           <Menu.Target>
-            <button>
-              <AiOutlineMenu size={22} />
-            </button>
+            <AiOutlineClose size={22} />
           </Menu.Target>
         </div>
         {phoneMenuItem.map((item) => (
