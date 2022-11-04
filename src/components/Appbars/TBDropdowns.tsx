@@ -348,22 +348,25 @@ export const PhoneNenu = () => (
           </Menu.Target>
         </div>
         {phoneMenuItem.map((item) => (
-          <p key={item.name} className="text-[16px] text-[#3b3b3b]">
+          <p key={item.name} className="text-[18px] text-[#3b3b3b] py-1">
             {item.link ? (
               <Link href={item.link}>
-                <a className="px-4 block py-2">{item.name}</a>
+                <a className="px-4 block py-2 text-[18px]">{item.name}</a>
               </Link>
             ) : (
               <Accordion>
                 <Accordion.Item value={item.name}>
-                  <Accordion.Control className="">
+                  <Accordion.Control className=" text-[18px]">
                     {item.name}
                   </Accordion.Control>
                   {item?.links?.map((link) => (
                     <Accordion.Panel key={link.name}>
-                      <Link href={link.link}>
-                        <a className="block">{link.name}</a>
-                      </Link>
+                      <div className=" flex items-center gap-3">
+                        <a>{link.icon}</a>
+                        <Link href={link.link}>
+                          <a className="block">{link.name}</a>
+                        </Link>
+                      </div>
                     </Accordion.Panel>
                   ))}
                 </Accordion.Item>
@@ -451,6 +454,14 @@ export const PhoneNenu = () => (
           </div>
         </div>
       </div> */}
+      <div className="flex flex-col items-center pb-3">
+        <button className="w-80 px-10 py-4 bg-[#5E5CE4] rounded-md text-white text-lg">
+          Sign up-its free
+        </button>
+        <button className="w-80 mt-5  py-4  rounded-lg px-[30px] text-[16px] bg-blue-100 text-[#5E5CE4]">
+          Book a demo
+        </button>
+      </div>
     </Menu.Dropdown>
   </Menu>
 );
@@ -477,18 +488,22 @@ const phoneMenuItem = [
     links: [
       {
         name: "Hire Global Employees",
+        icon: <BsGlobe2 size={15} className="text-[#3b3b3b]" />,
         link: "/global-employment",
       },
       {
         name: "Manage Contractors",
+        icon: <BsBank2 className="text-[#3b3b3b]" size={20} />,
         link: "/contractor-management",
       },
       {
         name: "Run Global Payroll",
+        icon: <TbFileDollar className="text-[#3b3b3b]" size={20} />,
         link: "/global-payroll",
       },
       {
         name: "Pay Remote Teams",
+        icon: <FaMoneyCheckAlt className="text-[#3b3b3b]" size={20} />,
         link: "/global-payments",
       },
     ],
@@ -498,11 +513,32 @@ const phoneMenuItem = [
     link: "/pricing",
   },
   {
-    name: "Privacy Policy",
-    link: "/privacypolicy",
+    name: "Case Studies",
+    links: [
+      {
+        name: "Blog",
+        icon: <FaUserFriends className="text-[#3b3b3b]" size={20} />,
+        link: "/global-employment",
+      },
+      {
+        name: "Global Hiring Guide",
+        icon: <BsGlobe className="text-[#3b3b3b]" size={20} />,
+        link: "/contractor-management",
+      },
+      {
+        name: "Podcast",
+        icon: <FaProductHunt className="text-[#3b3b3b]" size={20} />,
+        link: "/global-payroll",
+      },
+      {
+        name: "Help Center",
+        icon: <BiHelpCircle className="text-[#3b3b3b]" size={20} />,
+        link: "/global-payments",
+      },
+    ],
   },
   {
-    name: "Help Center",
-    link: "https://intercom.help/lano/en/",
+    name: "About US",
+    link: "/about",
   },
 ];
