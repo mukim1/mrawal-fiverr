@@ -340,9 +340,9 @@ export const PhoneNenu = () => (
       </button>
     </Menu.Target>
     <Menu.Dropdown sx={{ borderRadius: 0 }}>
-      <div className="text-black w-screen p-1">
-        <div className="flex justify-between items-center pl-2 pr-5 pt-5">
-          <Image src={`/assets/logo.png`} width={80} height={40} alt="" />
+      <div className="w-screen p-1 text-black">
+        <div className="flex items-center justify-between pt-5 pl-2 pr-5">
+          <Image src={`/assets/logo.png`} width={80} height={45} alt="" />
           <Menu.Target>
             <AiOutlineClose size={22} />
           </Menu.Target>
@@ -351,17 +351,17 @@ export const PhoneNenu = () => (
           <p key={item.name} className="text-[18px] text-[#3b3b3b] py-1">
             {item.link ? (
               <Link href={item.link}>
-                <a className="px-4 block py-2 text-[18px]">{item.name}</a>
+                <a className="px-4 block py-2 text-[18px] ">{item.name}</a>
               </Link>
             ) : (
               <Accordion>
                 <Accordion.Item value={item.name}>
-                  <Accordion.Control className=" text-[18px]">
+                  <Accordion.Control className=" text-[18px] ">
                     {item.name}
                   </Accordion.Control>
                   {item?.links?.map((link) => (
                     <Accordion.Panel key={link.name}>
-                      <div className=" flex items-center gap-3">
+                      <div className="flex items-center gap-3 ">
                         <a>{link.icon}</a>
                         <Link href={link.link}>
                           <a className="block">{link.name}</a>
@@ -455,11 +455,11 @@ export const PhoneNenu = () => (
         </div>
       </div> */}
       <div className="flex flex-col items-center pb-3">
-        <button className="w-80 px-10 py-4 bg-[#5E5CE4] rounded-md text-white text-lg">
-          Sign up-its free
+        <button className="w-80   py-4  rounded-lg px-[30px] text-[16px] bg-blue-100 text-[#5E5CE4]">
+          Login
         </button>
-        <button className="w-80 mt-5  py-4  rounded-lg px-[30px] text-[16px] bg-blue-100 text-[#5E5CE4]">
-          Book a demo
+        <button className="w-80 mt-5 px-10 py-4 bg-[#5E5CE4] rounded-md text-white text-lg">
+          Sign up for free
         </button>
       </div>
     </Menu.Dropdown>
