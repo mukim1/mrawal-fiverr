@@ -184,7 +184,7 @@ export const PhoneNenu = () => (
     </Menu.Target>
     <Menu.Dropdown sx={{ borderRadius: 0 }}>
       <div className="w-screen p-1 text-black">
-        <div className="flex items-center justify-between pt-5 pl-2 pr-5 pb-5">
+        <div className="flex items-center justify-between pt-5 pb-5 pl-2 pr-5">
           <Image
             src={`/assets/logo.png`}
             width={100}
@@ -204,9 +204,9 @@ export const PhoneNenu = () => (
               </Link>
             ) : (
               <Accordion>
-                <Accordion.Item value={item.name} className="border-none pr-10">
+                <Accordion.Item value={item.name} className="pr-10 border-none">
                   <Accordion.Control className="text-[18px]">
-                    <div className="text-xl text-gray-500 font-semibold">
+                    <div className="text-xl font-semibold text-gray-500">
                       {item.name}
                     </div>
                   </Accordion.Control>
@@ -285,20 +285,20 @@ const phoneMenuItem = [
     link: "/pricing",
   },
   {
-    name: "Case Studies",
+    name: "Resources",
     links: [
       {
         name: "Blog",
         icon: <FaUserFriends className="text-[#3b3b3b]" size={20} />,
         link: "/global-employment",
       },
+      // {
+      //   name: "Global Hiring Guide",
+      //   icon: <BsGlobe className="text-[#3b3b3b]" size={20} />,
+      //   link: "/contractor-management",
+      // },
       {
-        name: "Global Hiring Guide",
-        icon: <BsGlobe className="text-[#3b3b3b]" size={20} />,
-        link: "/contractor-management",
-      },
-      {
-        name: "Podcast",
+        name: "Customer Stories",
         icon: <FaProductHunt className="text-[#3b3b3b]" size={20} />,
         link: "/global-payroll",
       },
