@@ -339,10 +339,16 @@ export const PhoneNenu = () => (
         <AiOutlineMenu size={22} />
       </button>
     </Menu.Target>
-    <Menu.Dropdown sx={{ borderRadius: 0 }}>
+    <Menu.Dropdown sx={{ borderRadius: 0, paddingBottom: "20px" }}>
       <div className="text-black w-screen p-1">
-        <div className="flex justify-between items-center pl-2 pr-5 pt-5">
-          <Image src={`/assets/logo.png`} width={80} height={40} alt="" />
+        <div className="flex justify-between items-center pl-2 pr-5 pt-5 pb-5">
+          <Image
+            src={`/assets/logo.png`}
+            width={100}
+            height={30}
+            alt=""
+            objectFit="cover"
+          />
           <Menu.Target>
             <AiOutlineClose size={22} />
           </Menu.Target>
@@ -355,9 +361,11 @@ export const PhoneNenu = () => (
               </Link>
             ) : (
               <Accordion>
-                <Accordion.Item value={item.name}>
-                  <Accordion.Control className="">
-                    {item.name}
+                <Accordion.Item value={item.name} sx={{ border: "none" }}>
+                  <Accordion.Control>
+                    <span className="text-xl text-gray-500 font-semibold">
+                      {item.name}
+                    </span>
                   </Accordion.Control>
                   {item?.links?.map((link) => (
                     <Accordion.Panel key={link.name}>
