@@ -14,10 +14,6 @@ const CardSection = () => {
         <Title cls="lg:w-3/6">
           The complete toolkit to unlock global growth
         </Title>
-        {/* <div className="flex gap-5 ">
-          <AiOutlineArrowLeft />
-          <AiOutlineArrowRight />
-        </div> */}
       </div>
       <Carousel
         responsive={responsive}
@@ -70,15 +66,19 @@ const Helper = ({ v }: any) => {
 };
 
 const ButtonGroup = ({ next, previous, goToSlide, ...rest }: any) => {
-  // const {
-  //   carouselState: { totalItems, currentSlide },
-  // } = rest;
+  const {
+    carouselState: { currentSlide },
+  } = rest;
+
+  // console.log(currentSlide);
 
   return (
     <div className="absolute top-12 right-2">
-      <button onClick={previous} className="mr-6">
-        <AiOutlineArrowLeft size={20} />
-      </button>
+      {currentSlide > 5 && (
+        <button onClick={previous} className="mr-6">
+          <AiOutlineArrowLeft size={20} />
+        </button>
+      )}
       <button onClick={next}>
         <AiOutlineArrowRight size={20} />
       </button>

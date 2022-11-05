@@ -21,163 +21,6 @@ import {
   AiOutlineMenu,
 } from "react-icons/ai";
 
-// export const Solutions = () => {
-//   return (
-//     <TBDropdown name="Products">
-//       <div className="flex justify-between gap-x-7">
-//         <p>Scale your global team</p>
-//         <p>About our platform</p>
-//       </div>
-//       <hr />
-//       <div className="flex justify-between gap-5 ">
-//         <div>
-//           <div className="flex items-center gap-6 my-5 ">
-//             <BsGlobe2 className="text-blue-400" size={30} />
-
-//             <div className="flex flex-col ">
-//               <Link href="/global-employment">
-//                 <a className="text-lg text-black ">Hire Global Employeess</a>
-//               </Link>
-//               <Link href="/global-employment">
-//                 <a className="text-gray-500 ">
-//                   Hire talent abroad with an Employer of Record{" "}
-//                 </a>
-//               </Link>
-//             </div>
-//           </div>
-//           <div className="flex items-center gap-6 ">
-//             <BsBank2 className="text-blue-400" size={30} />
-//             <div className="flex flex-col ">
-//               <Link href="/contractor-management">
-//                 <a className="text-lg text-black ">Manage Contractors</a>
-//               </Link>
-//               <Link href="/contractor-management">
-//                 <a className="text-gray-500 ">
-//                   Compliantly hire, manage and pay contractors
-//                 </a>
-//               </Link>
-//             </div>
-//           </div>
-//         </div>
-
-//         <div>
-//           <div className="flex items-center gap-6 my-5">
-//             <TbFileDollar className="text-blue-400" size={30} />
-//             <div className="flex flex-col ">
-//               <Link href="/global-payroll">
-//                 <a className="text-lg text-black ">Run Global Payroll</a>
-//               </Link>
-//               <Link href="/global-payroll">
-//                 <a className="text-gray-500 ">
-//                   Manage payroll for your entire team in one place
-//                 </a>
-//               </Link>
-//             </div>
-//           </div>
-//           <div className="flex items-center gap-6 my-5 ">
-//             <FaMoneyCheckAlt className="text-blue-400" size={30} />
-//             <div className="flex flex-col ">
-//               <Link href="/global-payments">
-//                 <a className="text-lg text-black ">Pay Remote Teams</a>
-//               </Link>
-//               <Link href="/global-payments">
-//                 <a className="text-gray-500 ">
-//                   Send global payments in 50+ currencies at low cost
-//                 </a>
-//               </Link>
-//             </div>
-//           </div>
-//         </div>
-
-//         <div className="gap-6 my-5 ">
-//           <p className="py-2 text-lg text-black ">API and Integrations</p>
-//           <Link href="/privacypolicy">
-//             <p className="py-2 text-lg text-black ">Security and Privacy</p>
-//           </Link>
-//           <p className="py-2 text-lg text-black">Global Compliance</p>
-//         </div>
-//       </div>
-//     </TBDropdown>
-//   );
-// };
-
-// export const Resources = () => {
-//   return (
-//     <TBDropdown name="Resources">
-//       <div className="flex justify-between gap-x-7">
-//         <p>Grow your global business</p>
-//         <p>Further information</p>
-//       </div>
-//       <hr />
-//       <div className="flex justify-between gap-5 ">
-//         <div>
-//           <div className="flex items-center gap-6 my-5 ">
-//             <FaUserFriends className="text-blue-400" size={30} />
-
-//             <div className="flex flex-col ">
-//               <Link href="">
-//                 <a className="text-lg text-black ">Case Studies</a>
-//               </Link>
-//               <Link href="">
-//                 <a className="text-gray-500 ">
-//                   Learn how Lano helps companies unlock growth
-//                 </a>
-//               </Link>
-//             </div>
-//           </div>
-//           <div className="flex items-center gap-6 ">
-//             <FaBlogger className="text-blue-400" size={30} />
-//             <div className="flex flex-col ">
-//               <Link href="">
-//                 <a className="text-lg text-black ">Blog</a>
-//               </Link>
-//               <Link href="">
-//                 <a className="text-gray-500 ">
-//                   Useful information for companies and contractors
-//                 </a>
-//               </Link>
-//             </div>
-//           </div>
-//         </div>
-//         <div>
-//           <div className="flex items-center gap-6 my-5 ">
-//             <BsGlobe className="text-blue-400" size={30} />
-//             <div className="flex flex-col ">
-//               <Link href="/global-employment">
-//                 <a className="text-lg text-black ">Global Hiring Guide</a>
-//               </Link>
-//               <Link href="/global-employment">
-//                 <a className="text-gray-500 ">
-//                   All you need to know to hire abroad
-//                 </a>
-//               </Link>
-//             </div>
-//           </div>
-//           <div className="flex items-center gap-6 ">
-//             <FaProductHunt className="text-blue-400" size={30} />
-//             <div className="flex flex-col ">
-//               <Link href="">
-//                 <a className="text-lg text-black ">Podcast</a>
-//               </Link>
-//               <Link href="">
-//                 <a className="text-gray-500 ">
-//                   Listen to our podcast The State Of Work
-//                 </a>
-//               </Link>
-//             </div>
-//           </div>
-//         </div>
-//         <div className="flex flex-col items-center gap-6 my-5 ">
-//           <Link href="https://intercom.help/lano/en/">
-//             <a className=" text-lg text-black font-[500] hover:">Help Center</a>
-//           </Link>
-//           <p className=" text-lg text-black font-[500] ">Affiliate Program</p>
-//         </div>
-//       </div>
-//     </TBDropdown>
-//   );
-// };
-
 export const Solutions = () => {
   return (
     <Menu
@@ -339,9 +182,9 @@ export const PhoneNenu = () => (
         <AiOutlineMenu size={22} />
       </button>
     </Menu.Target>
-    <Menu.Dropdown sx={{ borderRadius: 0, paddingBottom: "20px" }}>
-      <div className="text-black w-screen p-1">
-        <div className="flex justify-between items-center pl-2 pr-5 pt-5 pb-5">
+    <Menu.Dropdown sx={{ borderRadius: 0 }}>
+      <div className="w-screen p-1 text-black">
+        <div className="flex items-center justify-between pt-5 pl-2 pr-5 pb-5">
           <Image
             src={`/assets/logo.png`}
             width={100}
@@ -354,24 +197,27 @@ export const PhoneNenu = () => (
           </Menu.Target>
         </div>
         {phoneMenuItem.map((item) => (
-          <p key={item.name} className="text-[16px] text-[#3b3b3b]">
+          <p key={item.name} className="text-[18px] text-[#3b3b3b] py-1">
             {item.link ? (
               <Link href={item.link}>
-                <a className="px-4 block py-2">{item.name}</a>
+                <a className="px-4 block py-2 text-[18px] ">{item.name}</a>
               </Link>
             ) : (
               <Accordion>
-                <Accordion.Item value={item.name} sx={{ border: "none" }}>
-                  <Accordion.Control>
-                    <span className="text-xl text-gray-500 font-semibold">
+                <Accordion.Item value={item.name} className="border-none pr-10">
+                  <Accordion.Control className="text-[18px]">
+                    <div className="text-xl text-gray-500 font-semibold">
                       {item.name}
-                    </span>
+                    </div>
                   </Accordion.Control>
                   {item?.links?.map((link) => (
                     <Accordion.Panel key={link.name}>
-                      <Link href={link.link}>
-                        <a className="block">{link.name}</a>
-                      </Link>
+                      <div className="flex items-center gap-3 ">
+                        <a>{link.icon}</a>
+                        <Link href={link.link}>
+                          <a className="block">{link.name}</a>
+                        </Link>
+                      </div>
                     </Accordion.Panel>
                   ))}
                 </Accordion.Item>
@@ -380,85 +226,14 @@ export const PhoneNenu = () => (
           </p>
         ))}
       </div>
-      {/* <div className="relative w-screen min-h-screen p-10 pt-8 text-black">
-        <div className="flex justify-between">
-          <Image src={`/assets/logo.png`} width={50} height={50} alt="" />
-          <Menu.Target>
-            <AiOutlineClose size={22} />
-          </Menu.Target>
-        </div>
-        <div className="flex flex-col ">
-          <div className="my-2 ">
-            <Link href="/">
-              <a className="text-lg font-bold capitalize hover:underline">
-                Home
-              </a>
-            </Link>
-          </div>
-          <div className="my-2 ">
-            <Link href="/global-employment">
-              <a className="text-lg font-bold capitalize hover:underline">
-                Solution
-              </a>
-            </Link>
-          </div>
-
-          <div className="flex gap-6 my-2 ">
-            <BsGlobe2 className="text-blue-400" size={30} />
-
-            <div className="flex flex-col ">
-              <Link href="/global-employment">
-                <a className="text-lg text-black ">Hire Global Employeess</a>
-              </Link>
-            </div>
-          </div>
-          <div className="flex gap-6 my-2 ">
-            <BsBank2 className="text-blue-400" size={30} />
-            <div className="flex flex-col ">
-              <Link href="/contractor-management">
-                <a className="text-lg text-black ">Manage Contractors</a>
-              </Link>
-            </div>
-          </div>
-          <div className="flex gap-6 my-2 ">
-            <TbFileDollar className="text-blue-400" size={30} />
-            <div className="flex flex-col ">
-              <Link href="/global-payroll">
-                <a className="text-lg text-black ">Run Global Payroll</a>
-              </Link>
-            </div>
-          </div>
-          <div className="flex gap-6 my-2 ">
-            <FaMoneyCheckAlt className="text-blue-400" size={30} />
-            <div className="flex flex-col ">
-              <Link href="/global-payments">
-                <a className="text-lg text-black ">Pay Remote Teams</a>
-              </Link>
-            </div>
-          </div>
-          <div className="my-2 ">
-            <Link href="/pricing">
-              <a className="text-lg font-bold capitalize hover:underline">
-                Pricing
-              </a>
-            </Link>
-          </div>
-          <div className="my-2 ">
-            <Link href="/privacypolicy">
-              <a className="text-lg font-bold capitalize hover:underline">
-                Privacy Policy
-              </a>
-            </Link>
-          </div>
-          <div className="my-2 ">
-            <Link href="https://intercom.help/lano/en/">
-              <a className="text-lg font-bold capitalize hover:underline">
-                Help Center
-              </a>
-            </Link>
-          </div>
-        </div>
-      </div> */}
+      <div className="flex flex-col items-center my-6">
+        <button className="w-[95%] py-4 rounded-lg bg-blue-100 text-[#5E5CE4] text-lg">
+          Login
+        </button>
+        <button className="w-[95%] mt-5 py-4 bg-[#5E5CE4] rounded-md text-white text-lg">
+          Sign up for free
+        </button>
+      </div>
     </Menu.Dropdown>
   </Menu>
 );
@@ -485,18 +260,22 @@ const phoneMenuItem = [
     links: [
       {
         name: "Hire Global Employees",
+        icon: <BsGlobe2 size={15} className="text-[#3b3b3b]" />,
         link: "/global-employment",
       },
       {
         name: "Manage Contractors",
+        icon: <BsBank2 className="text-[#3b3b3b]" size={20} />,
         link: "/contractor-management",
       },
       {
         name: "Run Global Payroll",
+        icon: <TbFileDollar className="text-[#3b3b3b]" size={20} />,
         link: "/global-payroll",
       },
       {
         name: "Pay Remote Teams",
+        icon: <FaMoneyCheckAlt className="text-[#3b3b3b]" size={20} />,
         link: "/global-payments",
       },
     ],
@@ -506,11 +285,32 @@ const phoneMenuItem = [
     link: "/pricing",
   },
   {
-    name: "Privacy Policy",
-    link: "/privacypolicy",
+    name: "Case Studies",
+    links: [
+      {
+        name: "Blog",
+        icon: <FaUserFriends className="text-[#3b3b3b]" size={20} />,
+        link: "/global-employment",
+      },
+      {
+        name: "Global Hiring Guide",
+        icon: <BsGlobe className="text-[#3b3b3b]" size={20} />,
+        link: "/contractor-management",
+      },
+      {
+        name: "Podcast",
+        icon: <FaProductHunt className="text-[#3b3b3b]" size={20} />,
+        link: "/global-payroll",
+      },
+      {
+        name: "Help Center",
+        icon: <BiHelpCircle className="text-[#3b3b3b]" size={20} />,
+        link: "/global-payments",
+      },
+    ],
   },
   {
-    name: "Help Center",
-    link: "https://intercom.help/lano/en/",
+    name: "About US",
+    link: "/about",
   },
 ];
